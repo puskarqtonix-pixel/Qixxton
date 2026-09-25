@@ -1,16 +1,17 @@
-<!doctype html>
-<html lang="en" data-theme="light">
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Contact Qixton and request a digital marketing package."><meta name="theme-color" content="#f8f7ff">
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Contact Qixton and request a digital marketing package." name="description"/><meta content="#f8f7ff" name="theme-color"/>
 <title>Request a Package — Qixton</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
+<link href="favicon.png" rel="icon" type="image/svg+xml"/><link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="style.css" rel="stylesheet"/>
 </head>
 <body><div class="cursor-glow"></div><header class="site-nav scrolled" id="siteNav">
 <div class="shell nav-row-v2">
-<a class="nav-brand-v2" href="index.html"><img alt="" src="qx-mark.svg"/><span>QIXTON</span></a>
+<a class="nav-brand-v2" href="index.html"><img alt="Qixton" src="qixton-logo-full.png"/><span></span></a>
 <button aria-label="Open menu" class="nav-mobile-btn" id="navMobileBtn">☰</button>
 <nav class="nav-menu-v2" id="navMenuV2">
 <a href="index.html">Home</a>
@@ -46,33 +47,33 @@
 </div>
 </header>
 <main class="shell package-form-shell">
-  <section class="package-form-intro">
-    <div class="section-kicker">REQUEST A PACKAGE</div>
-    <h1>Tell us what<br><span>you need.</span></h1>
-    <p>Fill in the details and the enquiry will be sent to Qixton at <strong>puskar.qixton@gmail.com</strong>.</p>
-    <div class="selection-summary" id="selectionSummary"><small>SELECTED PACKAGE</small><b id="summaryService">Qixton Service</b><span id="summaryPackage">Choose a package in the form</span></div>
-  </section>
-  <section class="package-form-card">
-    <form action="https://formsubmit.co/puskar.qixton@gmail.com" method="POST" id="packageForm">
-      <input type="hidden" name="_subject" value="New Qixton Package Enquiry">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://puskarqtonix-pixel.github.io/Qixxton/thank-you.html">
-      <input type="hidden" name="Selected Price" id="selectedPrice" value="">
-      <div class="form-grid">
-        <div class="form-field"><label>Your Name *</label><input type="text" name="Name" required autocomplete="name"></div>
-        <div class="form-field"><label>Email *</label><input type="email" name="Email" required autocomplete="email"></div>
-        <div class="form-field"><label>Phone / WhatsApp *</label><input type="tel" name="Phone" required autocomplete="tel"></div>
-        <div class="form-field"><label>Business Name</label><input type="text" name="Business" autocomplete="organization"></div>
-        <div class="form-field"><label>Service *</label><select name="Service" id="serviceSelect" required><option value="">Choose service</option><option>Web Design</option><option>SEO</option><option>Social Media</option><option>Paid Ads</option><option>AI Search</option><option>Custom Package</option></select></div>
-        <div class="form-field"><label>Package</label><input type="text" name="Package" id="packageInput" placeholder="Starter / Growth / Premium"></div>
-        <div class="form-field"><label>Budget</label><select name="Budget"><option value="">Choose range</option><option>Under ₹10,000</option><option>₹10,000 – ₹20,000</option><option>₹20,000 – ₹35,000</option><option>₹35,000+</option></select></div>
-        <div class="form-field"><label>Preferred Contact</label><select name="Preferred Contact"><option>Email</option><option>Phone</option><option>WhatsApp</option><option>Google Meet</option></select></div>
-        <div class="form-field full"><label>Tell us about your business</label><textarea name="Message" placeholder="What do you want Qixton to help you with?"></textarea></div>
-        <div class="form-field full"><button class="form-submit" type="submit">Send Package Request →</button></div>
-      </div>
-      <p class="form-note">Your enquiry is sent through FormSubmit to puskar.qixton@gmail.com. The first live submission may require a one-time email activation from FormSubmit before forwarding begins.</p>
-    </form>
-  </section>
+<section class="package-form-intro">
+<div class="section-kicker">REQUEST A PACKAGE</div>
+<h1>Tell us what<br/><span>you need.</span></h1>
+<p>Fill in the details and the enquiry will be sent to Qixton at <strong>puskar.qixton@gmail.com</strong>.</p>
+<div class="selection-summary" id="selectionSummary"><small>SELECTED PACKAGE</small><b id="summaryService">Qixton Service</b><span id="summaryPackage">Choose a package in the form</span></div>
+</section>
+<section class="package-form-card">
+<form action="https://formsubmit.co/puskar.qixton@gmail.com" id="packageForm" method="POST">
+<input name="_subject" type="hidden" value="New Qixton Package Enquiry"/>
+<input name="_template" type="hidden" value="table"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input name="_next" type="hidden" value="https://puskarqtonix-pixel.github.io/Qixxton/thank-you.html"/>
+<input id="selectedPrice" name="Selected Price" type="hidden" value=""/>
+<div class="form-grid">
+<div class="form-field"><label>Your Name *</label><input autocomplete="name" name="Name" required="" type="text"/></div>
+<div class="form-field"><label>Email *</label><input autocomplete="email" name="Email" required="" type="email"/></div>
+<div class="form-field"><label>Phone / WhatsApp *</label><input autocomplete="tel" name="Phone" required="" type="tel"/></div>
+<div class="form-field"><label>Business Name</label><input autocomplete="organization" name="Business" type="text"/></div>
+<div class="form-field"><label>Service *</label><select id="serviceSelect" name="Service" required=""><option value="">Choose service</option><option>Web Design</option><option>SEO</option><option>Social Media</option><option>Paid Ads</option><option>AI Search</option><option>Custom Package</option></select></div>
+<div class="form-field"><label>Package</label><input id="packageInput" name="Package" placeholder="Starter / Growth / Premium" type="text"/></div>
+<div class="form-field"><label>Budget</label><select name="Budget"><option value="">Choose range</option><option>Under ₹10,000</option><option>₹10,000 – ₹20,000</option><option>₹20,000 – ₹35,000</option><option>₹35,000+</option></select></div>
+<div class="form-field"><label>Preferred Contact</label><select name="Preferred Contact"><option>Email</option><option>Phone</option><option>WhatsApp</option><option>Google Meet</option></select></div>
+<div class="form-field full"><label>Tell us about your business</label><textarea name="Message" placeholder="What do you want Qixton to help you with?"></textarea></div>
+<div class="form-field full"><button class="form-submit" type="submit">Send Package Request →</button></div>
+</div>
+<p class="form-note">Your enquiry is sent through FormSubmit to puskar.qixton@gmail.com. The first live submission may require a one-time email activation from FormSubmit before forwarding begins.</p>
+</form>
+</section>
 </main>
-<footer class="inner-footer shell"><a class="inner-brand" href="index.html"><img alt="" src="qx-mark.svg"/><span>QIXTON</span></a><span>© <span id="year"></span> Qixton</span></footer><script src="script.js"></script></body></html>
+<footer class="inner-footer shell"><a class="inner-brand" href="index.html"><img alt="Qixton" src="qixton-logo-full.png"/><span></span></a><span>© <span id="year"></span> Qixton</span></footer><script src="script.js"></script></body></html>

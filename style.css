@@ -796,3 +796,246 @@ html[data-theme="dark"] .dropdown-menu{
     inset 0 1px 0 rgba(255,255,255,.08) !important;
 }
 
+
+
+/* ===== NAVBAR REFRESH TO MATCH REFERENCE ===== */
+.site-nav{
+  top:0 !important;
+  padding:0 !important;
+  z-index:120 !important;
+}
+.site-nav,
+.site-nav.scrolled,
+html[data-theme="dark"] .site-nav,
+html[data-theme="dark"] .site-nav.scrolled{
+  background: transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+}
+
+.nav-row-v2{
+  width:100%;
+  max-width:none !important;
+  min-height:74px !important;
+  padding:14px 20px !important;
+  border-radius:0 0 42px 42px !important;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.34), rgba(255,255,255,.18)) !important;
+  border:1px solid rgba(255,255,255,.38) !important;
+  border-top:0 !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.55),
+    0 12px 35px rgba(118,123,170,.08) !important;
+  backdrop-filter: blur(20px) saturate(1.15) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.15) !important;
+}
+.nav-row-v2::before,
+.nav-row-v2::after{
+  display:none !important;
+}
+
+.nav-brand-v2{
+  gap:10px !important;
+  padding-left:0 !important;
+}
+.nav-brand-v2 img{
+  width:28px !important;
+  height:28px !important;
+}
+.nav-brand-v2 span{
+  color:#1c2131 !important;
+  font-size:12px !important;
+  letter-spacing:.28em !important;
+  font-weight:800 !important;
+}
+
+.nav-menu-v2{
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  padding:0 !important;
+  gap:30px !important;
+}
+.nav-menu-v2 > a,
+.dropdown-toggle{
+  position:relative;
+  padding:10px 0 !important;
+  color:#2e3447 !important;
+  font-size:12px !important;
+  font-weight:600 !important;
+}
+.nav-menu-v2 > a:hover,
+.dropdown-toggle:hover{
+  color:#ff35c7 !important;
+}
+.nav-menu-v2 > a.active-nav{
+  color:#ff35c7 !important;
+}
+.nav-menu-v2 > a.active-nav::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:2px;
+  width:28px;
+  height:2px;
+  transform:translateX(-50%);
+  border-radius:999px;
+  background:linear-gradient(90deg,#ff2fc6,#ff5ce0);
+  box-shadow:0 0 12px rgba(255,61,198,.3);
+}
+
+.dropdown-toggle span{
+  color:#9aa0ae !important;
+  font-size:9px !important;
+}
+
+.theme-toggle{
+  width:62px !important;
+  height:36px !important;
+  border-radius:999px !important;
+  background:rgba(255,255,255,.52) !important;
+  border:1px solid rgba(255,255,255,.52) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.52) !important;
+}
+.theme-toggle span{
+  font-size:13px !important;
+}
+
+.nav-get-started{
+  min-height:38px !important;
+  padding:10px 18px !important;
+  border-radius:999px !important;
+  font-size:12px !important;
+  font-weight:700 !important;
+  background:linear-gradient(90deg,#ff30c7,#7a5cff 62%,#3d9cff) !important;
+  box-shadow:0 10px 28px rgba(127,79,255,.22), inset 0 1px 0 rgba(255,255,255,.28) !important;
+}
+
+.dropdown-menu{
+  margin-top:14px !important;
+  border-radius:18px !important;
+  background:rgba(255,255,255,.82) !important;
+  border:1px solid rgba(255,255,255,.72) !important;
+  box-shadow:0 18px 55px rgba(90,94,128,.12) !important;
+  backdrop-filter: blur(18px) saturate(1.2) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.2) !important;
+}
+
+.hero-exact{
+  margin-top:-74px !important;
+  padding-top:74px !important;
+}
+
+html[data-theme="dark"] .nav-row-v2{
+  background:linear-gradient(180deg, rgba(14,14,24,.42), rgba(14,14,24,.24)) !important;
+  border-color:rgba(255,255,255,.10) !important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08), 0 12px 35px rgba(0,0,0,.22) !important;
+}
+html[data-theme="dark"] .nav-brand-v2 span,
+html[data-theme="dark"] .nav-menu-v2 > a,
+html[data-theme="dark"] .dropdown-toggle{
+  color:#ece8f9 !important;
+}
+html[data-theme="dark"] .theme-toggle{
+  background:rgba(255,255,255,.07) !important;
+  border-color:rgba(255,255,255,.12) !important;
+}
+html[data-theme="dark"] .dropdown-menu{
+  background:rgba(15,14,24,.82) !important;
+  border-color:rgba(255,255,255,.10) !important;
+}
+
+@media (max-width: 1000px){
+  .nav-row-v2{
+    min-height:64px !important;
+    padding:12px 16px !important;
+    border-radius:0 0 28px 28px !important;
+  }
+  .nav-menu-v2{
+    top:70px !important;
+    left:14px !important;
+    right:14px !important;
+    padding:14px !important;
+    gap:4px !important;
+    background:rgba(255,255,255,.84) !important;
+    border:1px solid rgba(255,255,255,.72) !important;
+    box-shadow:0 18px 55px rgba(90,94,128,.12) !important;
+  }
+  html[data-theme="dark"] .nav-menu-v2{
+    background:rgba(15,14,24,.88) !important;
+    border-color:rgba(255,255,255,.10) !important;
+  }
+}
+
+@media (max-width: 760px){
+  .nav-row-v2{
+    min-height:58px !important;
+    padding:10px 12px !important;
+    border-radius:0 0 22px 22px !important;
+  }
+  .nav-brand-v2 img{
+    width:24px !important;
+    height:24px !important;
+  }
+  .nav-brand-v2 span{
+    font-size:11px !important;
+    letter-spacing:.24em !important;
+    display:block !important;
+  }
+  .theme-toggle{
+    width:56px !important;
+    height:32px !important;
+  }
+  .hero-exact{
+    margin-top:-58px !important;
+    padding-top:58px !important;
+  }
+}
+
+
+
+/* ===== Uploaded Qixton logo wordmark + Q favicon ===== */
+.nav-brand-v2{
+  gap: 0 !important;
+  padding-right: 10px !important;
+}
+.nav-brand-v2 img{
+  width: auto !important;
+  height: 30px !important;
+  max-width: 210px !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.nav-brand-v2 span{
+  display: none !important;
+}
+
+.inner-brand img,
+.footer-brand img{
+  width: auto !important;
+  height: 28px !important;
+  max-width: 190px !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.inner-brand span,
+.footer-brand span,
+.footer-brand b{
+  display: none !important;
+}
+
+@media (max-width: 760px){
+  .nav-brand-v2 img{
+    height: 24px !important;
+    max-width: 160px !important;
+  }
+  .inner-brand img,
+  .footer-brand img{
+    height: 22px !important;
+    max-width: 150px !important;
+  }
+}
