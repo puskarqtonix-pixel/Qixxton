@@ -472,3 +472,327 @@ html[data-theme="dark"] .package-form-intro p{color:#aaa6b7}html[data-theme="dar
 .site-nav.scrolled{background:rgba(255,255,255,.055)!important;border-bottom-color:rgba(255,255,255,.18)!important}
 html[data-theme="dark"] .site-nav{background:transparent!important;border-bottom-color:transparent!important}
 html[data-theme="dark"] .site-nav.scrolled{background:rgba(8,7,14,.07)!important;border-bottom-color:rgba(255,255,255,.06)!important}
+
+/* ===== Final polish fixes ===== */
+
+/* Truly transparent nav */
+.site-nav,
+.site-nav.scrolled,
+html[data-theme="dark"] .site-nav,
+html[data-theme="dark"] .site-nav.scrolled{
+  background: transparent !important;
+  border-bottom-color: rgba(255,255,255,.14) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.nav-row-v2{
+  background: transparent !important;
+}
+.hero-exact{
+  margin-top: -76px;
+  padding-top: 76px;
+}
+.hero-exact::before{
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+/* Make the service option cards more transparent/glassy */
+.stage-service-card{
+  background: rgba(255,255,255,.28) !important;
+  border: 1px solid rgba(255,255,255,.55) !important;
+  backdrop-filter: blur(18px) saturate(1.1) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.1) !important;
+  box-shadow: 0 18px 40px rgba(87,91,124,.10) !important;
+}
+.stage-service-card:hover,
+.stage-service-card.active{
+  background: rgba(255,255,255,.36) !important;
+  border-color: rgba(255,255,255,.76) !important;
+}
+html[data-theme="dark"] .stage-service-card{
+  background: rgba(18,15,29,.34) !important;
+  border-color: rgba(255,255,255,.16) !important;
+}
+html[data-theme="dark"] .stage-service-card:hover,
+html[data-theme="dark"] .stage-service-card.active{
+  background: rgba(24,21,37,.48) !important;
+  border-color: rgba(255,255,255,.22) !important;
+}
+
+/* Founder image smaller and more professional */
+.founder-hero-light,
+.founder-tease{
+  align-items: center !important;
+}
+.founder-hero-light > div:first-child,
+.founder-photo{
+  display:flex;
+  justify-content:center;
+}
+.founder-hero-light img,
+.founder-photo img{
+  width: min(100%, 430px) !important;
+  max-height: 540px !important;
+  object-fit: cover !important;
+  margin: 0 auto !important;
+  border-radius: 28px !important;
+  box-shadow: 0 22px 65px rgba(88,92,128,.14);
+}
+@media(max-width:760px){
+  .founder-hero-light img,
+  .founder-photo img{
+    width:min(100%, 320px) !important;
+    max-height: 390px !important;
+  }
+}
+
+/* Platform logo area cleaner */
+.platform-grid-logo img{
+  background: transparent !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  max-width: 180px;
+}
+
+/* Mobile nav logo proportions */
+@media(max-width:760px){
+  .nav-brand-v2 img{width:34px !important;height:34px !important}
+}
+
+/* Service cards in hero section (clickable hotspots visual alignment helper) */
+@media(max-width:760px){
+  .hero-exact{margin-top:-62px;padding-top:62px}
+}
+
+
+/* ===== APPLE-STYLE ULTRA GLASS NAVBAR ===== */
+.site-nav,
+.site-nav.scrolled,
+html[data-theme="dark"] .site-nav,
+html[data-theme="dark"] .site-nav.scrolled{
+  background: transparent !important;
+  border-bottom: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.nav-row-v2{
+  position: relative;
+  min-height: 68px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  overflow: visible;
+  background: rgba(255,255,255,.08) !important;
+  border: 1px solid rgba(255,255,255,.34);
+  box-shadow:
+    0 18px 45px rgba(89,94,135,.12),
+    inset 0 1px 0 rgba(255,255,255,.58),
+    inset 0 -1px 0 rgba(255,255,255,.12);
+  backdrop-filter: blur(26px) saturate(1.35) !important;
+  -webkit-backdrop-filter: blur(26px) saturate(1.35) !important;
+}
+
+.nav-row-v2::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:inherit;
+  pointer-events:none;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.34), rgba(255,255,255,.08)),
+    radial-gradient(circle at 20% 18%, rgba(255,255,255,.32), transparent 30%),
+    radial-gradient(circle at 82% 80%, rgba(255,255,255,.12), transparent 30%);
+  opacity:.95;
+}
+
+.nav-row-v2::after{
+  content:"";
+  position:absolute;
+  left:22px;
+  right:22px;
+  top:-1px;
+  height:46%;
+  border-radius:999px 999px 220px 220px;
+  pointer-events:none;
+  background: linear-gradient(180deg, rgba(255,255,255,.48), rgba(255,255,255,0));
+  opacity:.58;
+}
+
+.nav-brand-v2,
+.nav-menu-v2,
+.nav-actions-v2{
+  position:relative;
+  z-index:2;
+}
+
+.nav-brand-v2{
+  padding: 0 10px 0 4px;
+}
+
+.nav-brand-v2 span{
+  letter-spacing:.16em;
+  font-weight:800;
+}
+
+.nav-menu-v2{
+  gap: 22px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.10);
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.25);
+}
+
+.nav-menu-v2 > a,
+.dropdown-toggle{
+  color:#303547;
+  font-weight:500;
+}
+
+.nav-menu-v2 > a:hover,
+.dropdown-toggle:hover{
+  color:#6f55ff;
+}
+
+.nav-actions-v2{
+  gap:12px;
+}
+
+.theme-toggle{
+  width:64px;
+  height:38px;
+  border-radius:999px;
+  background: rgba(255,255,255,.22) !important;
+  border:1px solid rgba(255,255,255,.38) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.46),
+    0 8px 24px rgba(94,98,140,.10);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+}
+
+.nav-get-started{
+  min-height:42px;
+  padding: 11px 18px;
+  border-radius:999px;
+  box-shadow:
+    0 10px 26px rgba(127,79,255,.20),
+    inset 0 1px 0 rgba(255,255,255,.24);
+}
+
+.dropdown-menu{
+  margin-top:10px;
+  background: rgba(255,255,255,.76) !important;
+  border: 1px solid rgba(255,255,255,.72) !important;
+  box-shadow:
+    0 24px 70px rgba(84,88,122,.14),
+    inset 0 1px 0 rgba(255,255,255,.52) !important;
+  backdrop-filter: blur(24px) saturate(1.25) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(1.25) !important;
+}
+
+.hero-exact{
+  margin-top:-92px !important;
+  padding-top:92px !important;
+}
+
+@media (max-width: 1000px){
+  .nav-row-v2{
+    min-height:60px;
+    padding:8px 12px;
+  }
+  .nav-menu-v2{
+    top:74px;
+    padding:14px;
+    border-radius:24px;
+    background: rgba(255,255,255,.78) !important;
+    border:1px solid rgba(255,255,255,.74) !important;
+    box-shadow:
+      0 24px 70px rgba(84,88,122,.14),
+      inset 0 1px 0 rgba(255,255,255,.52) !important;
+    backdrop-filter: blur(24px) saturate(1.25) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.25) !important;
+  }
+}
+
+@media (max-width: 760px){
+  .site-nav{
+    top:10px;
+  }
+  .nav-row-v2{
+    min-height:56px;
+    padding:6px 10px;
+  }
+  .nav-menu-v2{
+    padding:12px;
+    border-radius:20px;
+  }
+  .nav-brand-v2{
+    gap:8px;
+  }
+  .nav-brand-v2 span{
+    display:block !important;
+    font-size:12px;
+  }
+  .nav-get-started{
+    display:none;
+  }
+  .theme-toggle{
+    width:58px;
+    height:34px;
+  }
+  .hero-exact{
+    margin-top:-78px !important;
+    padding-top:78px !important;
+  }
+}
+
+html[data-theme="dark"] .nav-row-v2{
+  background: rgba(12,11,19,.34) !important;
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.26),
+    inset 0 1px 0 rgba(255,255,255,.10),
+    inset 0 -1px 0 rgba(255,255,255,.04);
+}
+
+html[data-theme="dark"] .nav-row-v2::before{
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.02)),
+    radial-gradient(circle at 20% 18%, rgba(255,255,255,.10), transparent 28%),
+    radial-gradient(circle at 82% 80%, rgba(255,255,255,.04), transparent 30%);
+}
+
+html[data-theme="dark"] .nav-menu-v2{
+  background: rgba(255,255,255,.04);
+  border-color: rgba(255,255,255,.10);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+html[data-theme="dark"] .nav-menu-v2 > a,
+html[data-theme="dark"] .dropdown-toggle,
+html[data-theme="dark"] .nav-brand-v2,
+html[data-theme="dark"] .nav-brand-v2 span{
+  color:#ede9f8;
+}
+
+html[data-theme="dark"] .theme-toggle{
+  background: rgba(255,255,255,.06) !important;
+  border-color: rgba(255,255,255,.12) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 8px 24px rgba(0,0,0,.18);
+}
+
+html[data-theme="dark"] .dropdown-menu{
+  background: rgba(15,14,23,.76) !important;
+  border-color: rgba(255,255,255,.10) !important;
+  box-shadow:
+    0 24px 70px rgba(0,0,0,.32),
+    inset 0 1px 0 rgba(255,255,255,.08) !important;
+}
+
