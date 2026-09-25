@@ -1,21 +1,21 @@
-QIXTON — POLY-INSPIRED WEBSITE
+QIXTON DESIGN 3 — FINAL
 
-Files
-- index.html — scroll-driven homepage
-- pricing.html — pricing page
-- founder.html — founder page
+This package uses the exact approved bright white/glass Design 3 artwork as the first-screen hero for visual fidelity, with functional clickable hotspot links over the visible navigation, service cards and CTAs.
+
+Included:
+- index.html — exact Design 3 hero + scroll-driven service storytelling + pricing + founder teaser + guarantee + contact
+- pricing.html — full pricing page
+- founder.html — founder page for Puskar Das
 - guarantee.html — service satisfaction guarantee
-- style.css / script.js — design and interaction
+- style.css / script.js — responsive styling and animation
+- hero-reference.png — approved Design 3 hero visual
 - founder-puskar.jpg — founder portrait
-- Qixton logo/favicon assets
+- favicon assets
 
-Deploy
-Upload all files to the root of the GitHub Pages repository.
+GitHub Pages:
+Upload every file in this folder to the repository root. Keep filenames unchanged.
 
-Before public launch
-- Replace hello@qixton.com if that mailbox is not active.
-- Replace https://qixton.com in sitemap.xml if the final domain is different.
-- Review pricing and guarantee wording before signing client contracts.
-
-Design note
-This site is inspired by the scroll-driven storytelling and spacious product-showcase approach of modern product sites, while using original Qixton branding, visuals and copy.
+Before public launch:
+1. Confirm hello@qixton.com is active or replace it in the HTML files.
+2. Review pricing and guarantee wording before using it in client agreements.
+3. The homepage hero is image-led to preserve the approved design exactly; desktop navigation and CTA regions are mapped with clickable overlay links.
