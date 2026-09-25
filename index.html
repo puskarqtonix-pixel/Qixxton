@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -15,88 +15,123 @@
 </head>
 <body>
   <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-nav" id="siteNav">
+    <div class="shell nav-row-v2">
+      <a class="nav-brand-v2" href="#top"><img src="favicon.png" alt=""><span>QIXTON</span></a>
+
+      <button class="nav-mobile-btn" id="navMobileBtn" aria-label="Open menu">☰</button>
+
+      <nav class="nav-menu-v2" id="navMenuV2">
+        <a href="#top">Home</a>
+
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle">Services <span>⌄</span></button>
+          <div class="dropdown-menu">
+            <a href="web-design.html"><b>Web Design</b><span>Websites & conversion UX</span></a>
+            <a href="seo.html"><b>SEO</b><span>Organic & local search</span></a>
+            <a href="social-media.html"><b>Social Media</b><span>Content, reels & community</span></a>
+            <a href="paid-ads.html"><b>Paid Ads</b><span>Google & Meta campaigns</span></a>
+            <a href="ai-search.html"><b>AI Search</b><span>AEO, GEO & schema</span></a>
+          </div>
+        </div>
+
+        <div class="nav-dropdown">
+          <button class="dropdown-toggle">Pricing <span>⌄</span></button>
+          <div class="dropdown-menu pricing-drop">
+            <a href="pricing.html"><b>All Pricing</b><span>Compare Qixton packages</span></a>
+            <a href="web-design.html#pricing"><b>Website Pricing</b><span>From ₹14,999</span></a>
+            <a href="seo.html#pricing"><b>SEO Pricing</b><span>From ₹7,999/mo</span></a>
+            <a href="social-media.html#pricing"><b>Social Pricing</b><span>From ₹8,999/mo</span></a>
+            <a href="paid-ads.html#pricing"><b>Ads Pricing</b><span>From ₹9,999/mo</span></a>
+            <a href="ai-search.html#pricing"><b>AI Search Pricing</b><span>From ₹10,999/mo</span></a>
+          </div>
+        </div>
+
+        <a href="founder.html">Founder</a>
+        <a href="guarantee.html">Guarantee</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions-v2">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <span class="sun">☀</span><span class="moon">☾</span>
+        </button>
+        <a class="nav-get-started" href="#contact">Get Started →</a>
+      </div>
+    </div>
+  </header>
+
   <main id="top">
-    <!-- Exact Design 3 hero visual -->
     <section class="hero-exact" aria-label="Qixton homepage hero">
       <img src="hero-reference.png" alt="Qixton futuristic white glass digital agency homepage" class="hero-reference" id="heroReference" />
       <div class="hero-shine shine-a"></div>
       <div class="hero-shine shine-b"></div>
       <div class="hero-particle hp1"></div><div class="hero-particle hp2"></div><div class="hero-particle hp3"></div>
 
-      <!-- Clickable areas mapped to the visible design -->
-      <a class="hotspot hs-home" href="#top" aria-label="Home"></a>
-      <a class="hotspot hs-services" href="#services" aria-label="Services"></a>
-      <a class="hotspot hs-pricing" href="pricing.html" aria-label="Pricing"></a>
-      <a class="hotspot hs-founder" href="founder.html" aria-label="Founder"></a>
-      <a class="hotspot hs-guarantee" href="guarantee.html" aria-label="Guarantee"></a>
-      <a class="hotspot hs-contact" href="#contact" aria-label="Contact"></a>
+      <!-- Clickable hero service cards -->
       <a class="hotspot hs-getstarted" href="#contact" aria-label="Get started"></a>
       <a class="hotspot hs-herocta" href="#contact" aria-label="Get started today"></a>
       <a class="hotspot hs-work" href="#services" aria-label="See our work"></a>
-      <a class="hotspot hs-web" href="#services" aria-label="Web design"></a>
-      <a class="hotspot hs-seo" href="#services" aria-label="SEO"></a>
-      <a class="hotspot hs-social" href="#services" aria-label="Social media"></a>
-      <a class="hotspot hs-ads" href="#services" aria-label="Paid ads"></a>
-      <a class="hotspot hs-ai" href="#services" aria-label="AI search optimization"></a>
+      <a class="hotspot hs-web" href="web-design.html" aria-label="Web design pricing"></a>
+      <a class="hotspot hs-seo" href="seo.html" aria-label="SEO pricing"></a>
+      <a class="hotspot hs-social" href="social-media.html" aria-label="Social media pricing"></a>
+      <a class="hotspot hs-ads" href="paid-ads.html" aria-label="Paid ads pricing"></a>
+      <a class="hotspot hs-ai" href="ai-search.html" aria-label="AI search pricing"></a>
     </section>
 
-    <section class="story-light" id="services">
-      <div class="shell story-grid">
-        <div class="sticky-showcase">
-          <div class="glass-stage" id="glassStage">
-            <div class="stage-grid"></div>
-            <div class="stage-label"><span>QIXTON GROWTH SYSTEM</span><b id="stageIndex">01 / 05</b></div>
+    <section class="story-light story-v2" id="services">
+      <div class="shell section-heading services-title">
+        <h2>One system.<br>Five growth engines.</h2>
+        <p>Scroll through the Qixton stack. Each service has its own strategy, deliverables and pricing page.</p>
+      </div>
 
-            <div class="stage-scene active" data-scene="web">
-              <div class="web-window ww-back"></div>
-              <div class="web-window ww-main">
-                <div class="window-bar"><i></i><i></i><i></i></div>
-                <div class="window-layout"><div class="wl-copy"><span></span><span></span><b></b></div><div class="wl-orb"></div></div>
+      <div class="shell story-grid-v2">
+        <div class="sticky-showcase-v2">
+          <div class="design3-stage">
+            <div class="stage-ambient sa1"></div><div class="stage-ambient sa2"></div>
+            <div class="stage-topline"><span>QIXTON INTERACTIVE SHOWCASE</span><b id="stageIndex">01 / 05</b></div>
+
+            <div class="showcase-orb-wrap">
+              <div class="showcase-ring r1"></div>
+              <div class="showcase-ring r2"></div>
+              <div class="showcase-orb">
+                <img src="hero-reference.png" alt="">
               </div>
-              <div class="phone-card"><i></i><span></span><span></span><span></span></div>
-              <div class="glass-badge gb1">CUSTOM UI</div><div class="glass-badge gb2">CONVERSION UX</div>
+              <div class="pedestal"></div>
             </div>
 
-            <div class="stage-scene" data-scene="seo">
-              <div class="search-panel">
-                <div class="search-bar"><span>⌕</span><b>best service near me</b><i>↵</i></div>
-                <div class="search-result sr1"><em>01</em><div><small>RECOMMENDED</small><h4>Your Business</h4><p>Relevant. Trusted. Easy to choose.</p></div></div>
-                <div class="search-result"><em>02</em><div class="line"></div></div>
-                <div class="search-result"><em>03</em><div class="line short"></div></div>
-              </div>
-              <div class="seo-orb">Q</div>
-              <div class="mini-chip mc1">Local SEO</div><div class="mini-chip mc2">Intent</div><div class="mini-chip mc3">Authority</div>
-            </div>
+            <a class="stage-service-card active" data-service-card="web" href="web-design.html">
+              <span class="svc-icon">▣</span><div><b>Web Design</b><small>High-converting custom websites</small></div><em>₹14,999+</em>
+            </a>
+            <a class="stage-service-card" data-service-card="seo" href="seo.html">
+              <span class="svc-icon">⌕</span><div><b>SEO</b><small>Organic and local visibility</small></div><em>₹7,999/mo</em>
+            </a>
+            <a class="stage-service-card" data-service-card="social" href="social-media.html">
+              <span class="svc-icon">⌘</span><div><b>Social Media</b><small>Content, reels and engagement</small></div><em>₹8,999/mo</em>
+            </a>
+            <a class="stage-service-card" data-service-card="ads" href="paid-ads.html">
+              <span class="svc-icon">↗</span><div><b>Paid Ads</b><small>Google and Meta campaigns</small></div><em>₹9,999/mo</em>
+            </a>
+            <a class="stage-service-card" data-service-card="ai" href="ai-search.html">
+              <span class="svc-icon">✦</span><div><b>AI Search</b><small>AEO, GEO and schema</small></div><em>₹10,999/mo</em>
+            </a>
 
-            <div class="stage-scene" data-scene="social">
-              <div class="social-phone"><div class="phone-notch"></div><div class="social-post"><b>CREATE<br>ATTENTION.</b><i></i></div><div class="social-actions"><i></i><i></i><i></i></div></div>
-              <div class="social-float sf1"><small>REELS</small><b>+Reach</b></div>
-              <div class="social-float sf2"><small>CONTENT</small><b>+Trust</b></div>
-              <div class="social-float sf3"><small>ADS</small><b>+Leads</b></div>
-            </div>
-
-            <div class="stage-scene" data-scene="ads">
-              <div class="ads-dashboard">
-                <div class="ad-head"><span>CAMPAIGN CONTROL</span><b>LIVE</b></div>
-                <div class="ad-chart"><svg viewBox="0 0 600 220"><path d="M0 205 C70 205 96 178 152 184 C214 191 250 129 311 141 C373 153 412 85 475 99 C530 110 555 63 600 43"/></svg></div>
-                <div class="ad-metrics"><div><small>CTR</small><b>↑</b></div><div><small>LEADS</small><b>↑</b></div><div><small>ROAS</small><b>↑</b></div></div>
-              </div>
-            </div>
-
-            <div class="stage-scene" data-scene="ai">
-              <div class="ai-query"><i>✦</i><p>Which business should I choose?</p><span>AI SEARCH</span></div>
-              <div class="ai-answer"><div class="ai-top"><b>Q</b><div><small>RECOMMENDED</small><h4>Your Business</h4></div></div><p>Clear service signals, structured content and authority help AI systems understand the brand.</p><div class="ai-pills"><span>Schema</span><span>Entities</span><span>Authority</span></div></div>
-              <div class="ai-dot d1"></div><div class="ai-dot d2"></div><div class="ai-dot d3"></div><div class="ai-dot d4"></div>
+            <div class="stage-active-copy">
+              <small id="stageEyebrow">WEB DESIGN</small>
+              <strong id="stageTitle">A premium digital first impression.</strong>
+              <p id="stageBody">Custom-built websites designed around trust, clarity, speed and conversion.</p>
+              <a id="stageLink" href="web-design.html">Open Web Design Pricing →</a>
             </div>
           </div>
         </div>
 
-        <div class="story-copy">
-          <article class="story-step active" data-step="web" data-index="01 / 05"><span>01 / WEB DESIGN</span><h2>Build a digital presence that feels <em>premium.</em></h2><p>Custom-built websites designed around credibility, mobile experience and conversion — not generic templates.</p></article>
-          <article class="story-step" data-step="seo" data-index="02 / 05"><span>02 / SEO</span><h2>Rank higher and get found by <em>real customers.</em></h2><p>Technical SEO, local search, content structure and authority work together around actual buying intent.</p></article>
-          <article class="story-step" data-step="social" data-index="03 / 05"><span>03 / SOCIAL MEDIA</span><h2>Build attention that turns into <em>trust.</em></h2><p>Content, reels and social strategy designed to move people from awareness to enquiry.</p></article>
-          <article class="story-step" data-step="ads" data-index="04 / 05"><span>04 / PAID ADS</span><h2>Use paid media to create <em>measurable demand.</em></h2><p>Campaigns across Google and Meta can connect targeting, creative and landing experiences around conversion goals.</p></article>
-          <article class="story-step" data-step="ai" data-index="05 / 05"><span>05 / AI SEARCH</span><h2>Make your brand easier for AI to <em>understand.</em></h2><p>Entity clarity, schema, structured content and authority signals support AI-assisted discovery and answer engines.</p></article>
+        <div class="story-copy story-copy-v2">
+          <article class="story-step active" data-step="web" data-index="01 / 05"><span>01 / WEB DESIGN</span><h2>Build a digital presence that feels <em>premium.</em></h2><p>Custom-built websites designed around credibility, mobile experience and conversion — not generic templates.</p><a href="web-design.html">View Web Design pricing →</a></article>
+          <article class="story-step" data-step="seo" data-index="02 / 05"><span>02 / SEO</span><h2>Rank higher and get found by <em>real customers.</em></h2><p>Technical SEO, local search, content structure and authority work together around actual buying intent.</p><a href="seo.html">View SEO pricing →</a></article>
+          <article class="story-step" data-step="social" data-index="03 / 05"><span>03 / SOCIAL MEDIA</span><h2>Build attention that turns into <em>trust.</em></h2><p>Content, reels and social strategy designed to move people from awareness to enquiry.</p><a href="social-media.html">View Social pricing →</a></article>
+          <article class="story-step" data-step="ads" data-index="04 / 05"><span>04 / PAID ADS</span><h2>Use paid media to create <em>measurable demand.</em></h2><p>Google and Meta campaigns connect targeting, creative and landing experiences around conversion goals.</p><a href="paid-ads.html">View Ads pricing →</a></article>
+          <article class="story-step" data-step="ai" data-index="05 / 05"><span>05 / AI SEARCH</span><h2>Make your brand easier for AI to <em>understand.</em></h2><p>Entity clarity, schema, structured content and authority signals support AI-assisted discovery and answer engines.</p><a href="ai-search.html">View AI Search pricing →</a></article>
         </div>
       </div>
     </section>
@@ -104,16 +139,21 @@
     <section class="platforms-light shell">
       <div class="section-kicker">PLATFORMS WE WORK WITH</div>
       <div class="section-heading"><h2>Built for the platforms that drive modern growth.</h2><p>Campaign strategy and optimization around the channels your customers already use.</p></div>
-      <div class="platform-grid"><article><b>Google Ads</b><span>Search, display and conversion campaigns.</span></article><article><b>Meta Ads</b><span>Facebook and Instagram growth campaigns.</span></article><article><b>Amazon Ads</b><span>Marketplace visibility and sponsored product support.</span></article><article><b>Shopsy</b><span>Catalog and marketplace growth support.</span></article></div>
+      <div class="platform-grid platform-grid-logo">
+        <article><img src="google-ads-logo.svg" alt="Google Ads"><span>Search, display and conversion campaigns.</span></article>
+        <article><img src="meta-logo.svg" alt="Meta Ads"><span>Facebook and Instagram growth campaigns.</span></article>
+        <article><img src="amazon-ads-logo.svg" alt="Amazon Ads"><span>Marketplace visibility and sponsored product support.</span></article>
+        <article><img src="shopsy-logo.svg" alt="Shopsy"><span>Catalog and marketplace growth support.</span></article>
+      </div>
     </section>
 
     <section class="pricing-light shell" id="pricing">
       <div class="section-kicker">PRICING</div>
-      <div class="section-heading"><h2>Clear pricing. Different services. No mystery.</h2><p>Starter pricing for common Qixton engagements. Bigger scopes can be tailored.</p></div>
+      <div class="section-heading"><h2>Clear pricing. Different services. No mystery.</h2><p>Use the overview below, or open a service page to see pricing only for that service.</p></div>
       <div class="pricing-grid">
-        <article class="price-card"><small>WEBSITE STARTER</small><h3>₹14,999</h3><p>Custom website for small businesses.</p><ul><li>Up to 5 pages</li><li>Responsive design</li><li>Basic SEO setup</li><li>Contact form</li></ul></article>
-        <article class="price-card featured"><small>GROWTH STACK</small><h3>₹24,999<span>/month</span></h3><p>Connected monthly digital growth support.</p><ul><li>SEO support</li><li>Social media</li><li>AEO/GEO</li><li>Monthly strategy review</li></ul></article>
-        <article class="price-card"><small>PREMIUM WEBSITE</small><h3>₹29,999+</h3><p>Higher-end website with more custom motion.</p><ul><li>Advanced UI</li><li>Motion sections</li><li>Conversion architecture</li><li>Custom interactions</li></ul></article>
+        <a class="price-card" href="web-design.html#pricing"><small>WEBSITE DESIGN</small><h3>₹14,999+</h3><p>Custom websites for business growth.</p><ul><li>Starter / Business / Premium tiers</li><li>Responsive design</li><li>Conversion UX</li><li>SEO-ready structure</li></ul></a>
+        <a class="price-card featured" href="seo.html#pricing"><small>SEO</small><h3>₹7,999<span>/month</span></h3><p>Organic and local search growth.</p><ul><li>Technical SEO</li><li>Local SEO</li><li>Content strategy</li><li>Monthly reporting</li></ul></a>
+        <a class="price-card" href="pricing.html"><small>ALL SERVICES</small><h3>Compare</h3><p>See Qixton’s complete pricing overview.</p><ul><li>Social Media</li><li>Paid Ads</li><li>AI Search</li><li>Custom scopes</li></ul></a>
       </div>
       <a class="page-link" href="pricing.html">View full pricing →</a>
     </section>

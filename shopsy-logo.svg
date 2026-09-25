@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175 58">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#7C3AED"/><stop offset="1" stop-color="#EC4899"/></linearGradient></defs>
+<rect x="7" y="10" width="38" height="38" rx="12" fill="url(#g)"/>
+<path d="M18 22h16l-2 16H20z" fill="#fff"/><path d="M22 22c0-5 2-8 4-8s4 3 4 8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<text x="55" y="37" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#6D28D9">Shopsy</text>
+</svg>
