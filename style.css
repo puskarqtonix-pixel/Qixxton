@@ -988,3 +988,36 @@ html[data-theme="dark"] body{background:#f8f8ff!important;color:#12131b!importan
   .social-follow-links{flex-direction:column}
   .social-follow-link{width:100%;min-width:0}
 }
+
+
+/* ===== QIXTON ADDITION — OUR WORK + INDUSTRIES ICON SECTIONS ===== */
+.results-showcase{padding:110px 0 34px}
+.results-kicker{font-size:11px;letter-spacing:.22em;font-weight:800;color:#f04fd5;text-align:center;margin-bottom:12px}
+.results-heading{text-align:center;max-width:760px;margin:0 auto 34px}
+.results-heading h2{margin:0;font-family:Manrope,Inter,sans-serif;font-size:clamp(34px,4.4vw,62px);line-height:1;letter-spacing:-.05em}
+.results-heading h2 span{background:linear-gradient(90deg,#ff28c8,#7b4dff 65%,#338aff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.results-heading p{margin:14px auto 0;color:#7a7f91;font-size:15px;line-height:1.65;max-width:560px}
+.results-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.result-card{position:relative;padding:12px 12px 16px;border-radius:26px;background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(236,238,251,.82));border:1px solid rgba(255,255,255,.96);box-shadow:0 20px 55px rgba(92,96,132,.11)}
+.result-card img{width:100%;height:150px;object-fit:cover;border-radius:18px;display:block;margin-bottom:14px}
+.result-card-copy h3{margin:0 0 4px;font-family:Manrope,Inter,sans-serif;font-size:24px;line-height:1.05}
+.result-card-copy small{display:block;color:#808496;font-size:13px;margin-bottom:12px}
+.result-card-copy a{font-size:13px;font-weight:800;color:#f045c3}
+.result-arrow{position:absolute;right:16px;bottom:18px;width:36px;height:36px;border-radius:999px;display:grid;place-items:center;background:linear-gradient(145deg,rgba(255,235,248,.95),rgba(243,232,255,.95));color:#cf43d8;font-weight:900;box-shadow:0 10px 24px rgba(187,76,201,.16)}
+.industries-showcase{padding:30px 0 120px}
+.industries-heading{margin-bottom:30px}
+.industry-icon-grid{display:grid;grid-template-columns:repeat(8,1fr);gap:14px}
+.industry-icon-grid article{min-height:116px;border-radius:24px;padding:16px 10px 14px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(235,237,251,.78));border:1px solid rgba(255,255,255,.96);box-shadow:0 18px 45px rgba(91,95,132,.09)}
+.industry-icon{width:42px;height:42px;border-radius:999px;display:grid;place-items:center;margin-bottom:12px;background:linear-gradient(145deg,rgba(255,240,250,.95),rgba(236,242,255,.95));font-size:21px;box-shadow:inset 0 1px 1px rgba(255,255,255,.8),0 8px 18px rgba(100,103,139,.08)}
+.industry-icon-grid h3{margin:0;font-size:13px;line-height:1.3;color:#232635;font-weight:700}
+@media(max-width:1100px){
+  .results-grid{grid-template-columns:1fr}
+  .industry-icon-grid{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:760px){
+  .results-showcase{padding:84px 0 24px}
+  .results-heading{margin-bottom:24px}
+  .result-card img{height:170px}
+  .industries-showcase{padding:18px 0 88px}
+  .industry-icon-grid{grid-template-columns:repeat(2,1fr)}
+}
