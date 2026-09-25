@@ -555,3 +555,48 @@ html[data-theme="dark"] body{background:#f8f8ff!important;color:#12131b!importan
   .industry-grid{grid-template-columns:1fr}
   .industries-light{padding:88px 0}
 }
+
+/* ===== QIXTON FINAL FIX — soft nav + clean ad logos + founder image ===== */
+.site-nav,
+.site-nav.scrolled{
+  background:linear-gradient(90deg,rgba(255,247,255,.78),rgba(244,247,255,.76))!important;
+  backdrop-filter:blur(18px) saturate(1.12)!important;
+  -webkit-backdrop-filter:blur(18px) saturate(1.12)!important;
+  border:1px solid rgba(255,255,255,.58)!important;
+  box-shadow:0 10px 35px rgba(91,73,160,.10)!important;
+}
+.platform-grid-logo .platform-brand{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:16px;
+  min-width:0;
+}
+.platform-grid-logo .platform-brand img{
+  width:44px!important;
+  height:38px!important;
+  max-width:44px!important;
+  margin:0!important;
+  padding:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  object-fit:contain!important;
+  flex:0 0 44px;
+}
+.platform-grid-logo .platform-brand b{
+  display:block!important;
+  margin:0!important;
+  font-family:Manrope,Inter,sans-serif;
+  font-size:18px!important;
+  line-height:1.2;
+  white-space:nowrap;
+  color:#171925;
+}
+.founder-photo img,
+.founder-hero-light img{
+  aspect-ratio:auto!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  display:block;
+}
