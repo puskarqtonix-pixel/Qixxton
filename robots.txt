@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://puskarqtonix-pixel.github.io/Qixxton/sitemap.xml

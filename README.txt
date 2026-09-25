@@ -1,19 +1,28 @@
-QIXTON PREMIUM V3
+QIXTON PREMIUM V5
 
-Pages:
-- index.html — main scroll-driven homepage
-- pricing.html — website + monthly marketing pricing
-- guarantee.html — satisfaction / money-back guarantee terms
+Main improvements:
+- Removed fake browser chrome from the live webpage.
+- Added true WebGL/Three.js interactive 3D glass sphere with a 3D Q, orbit rings, particles and mouse/scroll rotation.
+- Replaced unsupported performance statistics with service promises.
+- Changed guarantee wording to "60-Day Service Satisfaction Guarantee — terms apply" everywhere.
+- Changed AI platform wording to "optimized for discovery" and added a no-placement-guarantee note.
+- Added mobile hamburger navigation.
+- Added selected work/builds section without fabricated revenue/ranking claims.
+- Added enquiry form that opens the visitor's email app.
+- Added simple Qx favicon (SVG + PNG + Apple touch icon).
+- Added reduced-motion support.
+- Added pricing clarity on revisions, delivery, ad spend and third-party costs.
+- Added Privacy and Terms pages.
+- Added robots.txt, sitemap.xml, canonical/OG metadata and Organization schema.
 
-Assets:
-- qixton-glass-orb.jpg — new glass-orb hero artwork
-- favicon.ico / favicon.png / favicon-512.png / apple-touch-icon.png
-- qixton_logo.png
+DEPLOY TO GITHUB PAGES
+1. Remove the old files from the repository root (or overwrite them).
+2. Upload every file from this folder to the root of Qixxton.
+3. Keep the filenames exactly as they are.
+4. GitHub Pages should redeploy automatically.
 
-Deployment: upload the entire folder contents to the root of your GitHub Pages or Netlify site.
-
-Important before launch:
-1. Confirm hello@qixton.com is active or replace the mailto links.
-2. Review prices and guarantee terms for your actual business policy.
-3. “Platforms We Work With” is intentionally used instead of “Partners” unless you have official partner status.
-4. Third-party costs are excluded from the refund language.
+IMPORTANT BEFORE COMMERCIAL USE
+- Activate hello@qixton.com OR change CONTACT_EMAIL at the top of script.js.
+- Update the canonical/OG/sitemap URLs when you move from GitHub Pages to your final domain.
+- Replace selected-work copy with client-approved projects/testimonials as they become available.
+- Put exact project-specific support/refund terms in signed proposals/contracts.
