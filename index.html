@@ -8,6 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#08050a">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -24,6 +28,8 @@
       <div class="nav-links">
         <a href="#story">Experience</a>
         <a href="#services">Services</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="guarantee.html">Guarantee</a>
         <a href="#process">Process</a>
       </div>
       <a class="btn btn-small magnetic" href="#contact"><span>Start a project</span><b>↗</b></a>
@@ -52,25 +58,11 @@
         </div>
       </div>
 
-      <div class="hero-machine reveal-scale" aria-hidden="true">
-        <div class="machine-floor"></div>
-        <div class="orbital-ring ring-one"></div>
-        <div class="orbital-ring ring-two"></div>
-        <div class="orbital-ring ring-three"></div>
-        <div class="energy-core">
-          <div class="core-halo"></div>
-          <span>Q</span>
-        </div>
-        <div class="node node-web"><small>01</small><b>WEB</b><em>Conversion layer</em></div>
-        <div class="node node-seo"><small>02</small><b>SEO</b><em>Demand capture</em></div>
-        <div class="node node-social"><small>03</small><b>SOCIAL</b><em>Attention layer</em></div>
-        <div class="node node-ai"><small>04</small><b>AI</b><em>Discovery layer</em></div>
-        <svg class="machine-lines" viewBox="0 0 700 700" preserveAspectRatio="none">
-          <path d="M350 350 C235 265 192 185 105 145"/>
-          <path d="M350 350 C475 250 520 190 610 130"/>
-          <path d="M350 350 C470 448 520 510 625 560"/>
-          <path d="M350 350 C240 450 175 500 95 575"/>
-        </svg>
+      <div class="hero-machine hero-art reveal-scale" aria-hidden="true">
+        <div class="hero-art-halo"></div>
+        <img src="qixton-glass-orb.jpg" alt="" class="hero-art-image" />
+        <div class="hero-art-chip chip-top"><small>QIXTON CORE</small><b>GLASS / MOTION</b></div>
+        <div class="hero-art-chip chip-bottom"><small>CONNECTED SYSTEM</small><b>WEB · SEARCH · SOCIAL · AI</b></div>
       </div>
 
       <div class="hero-bottom">
@@ -217,7 +209,7 @@
     <section class="services shell section-pad" id="services">
       <div class="section-heading">
         <div><span class="eyebrow">THE QIXTON STACK</span><h2>Six systems.<br><em>One growth engine.</em></h2></div>
-        <p>Each service works independently. The real advantage appears when they work together.</p>
+        <p>Each service works independently. The real advantage appears when they work together.<br><a class="inline-price-link" href="pricing.html">View transparent pricing ↗</a></p>
       </div>
 
       <div class="service-grid">
@@ -251,6 +243,20 @@
           <h3>Growth Strategy</h3><p>Channel strategy, analytics and iterative optimization that connects everything together.</p>
           <div class="service-bottom"><span>STRATEGY / DATA / SCALE</span><b>↗</b></div>
         </article>
+      </div>
+    </section>
+
+
+    <section class="platforms shell section-pad" id="platforms">
+      <div class="section-heading platform-heading">
+        <div><span class="eyebrow">PLATFORMS WE WORK WITH</span><h2>Built for the channels<br><em>your customers already use.</em></h2></div>
+        <p>We build, manage and optimize campaigns or commerce workflows across these platforms. Qixton does not claim official partnership or endorsement unless explicitly stated.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="platform-card tilt-card"><span class="platform-glyph">G</span><div><small>SEARCH + PERFORMANCE</small><h3>Google</h3><p>Search, local visibility, analytics and conversion-led campaigns.</p></div></article>
+        <article class="platform-card tilt-card"><span class="platform-glyph">M</span><div><small>SOCIAL + PERFORMANCE</small><h3>Meta Ads</h3><p>Facebook and Instagram campaigns built around creative, targeting and lead flow.</p></div></article>
+        <article class="platform-card tilt-card"><span class="platform-glyph">A</span><div><small>MARKETPLACE ADS</small><h3>Amazon Ads</h3><p>Product visibility and advertising workflows for eligible marketplace sellers.</p></div></article>
+        <article class="platform-card tilt-card"><span class="platform-glyph">S</span><div><small>COMMERCE</small><h3>Shopsy</h3><p>Storefront and promotional support for businesses selling through Shopsy.</p></div></article>
       </div>
     </section>
 
@@ -290,6 +296,15 @@
       </div>
     </section>
 
+
+    <section class="promise-strip shell">
+      <a class="promise-card" href="guarantee.html">
+        <div class="promise-orb">✓</div>
+        <div><span class="eyebrow">QIXTON SATISFACTION PROMISE</span><h3>Not satisfied? Eligible service fees can be refunded.</h3><p>See the simple guarantee terms, timing and exclusions before you start.</p></div>
+        <b>Read guarantee ↗</b>
+      </a>
+    </section>
+
     <section class="contact shell section-pad" id="contact">
       <div class="contact-panel">
         <div class="contact-grid" aria-hidden="true"></div>
@@ -308,6 +323,7 @@
   <footer class="shell footer">
     <a class="brand" href="#top"><img src="qixton_logo.png" alt=""><span>QIXTON</span></a>
     <p>WEB · SEO · SOCIAL · PAID · AEO / GEO · GROWTH</p>
+    <div class="footer-links"><a href="pricing.html">Pricing</a><a href="guarantee.html">Guarantee</a></div>
     <span>© <span id="year"></span> Qixton</span>
   </footer>
 
