@@ -1,21 +1,18 @@
-QIXTON DESIGN 3 — FIXED VERSION
+QIXTON — FINAL LIGHT DESIGN BUILD
 
-This version fixes:
-- Platform logos for Google Ads, Meta Ads, Amazon Ads and Shopsy
-- Redesigned interactive service showcase (removed the wireframe-looking section)
-- Each hero/service option opens its own service page with pricing only for that service
-- Dropdown menus for Services and Pricing
-- Light / Dark theme switch with saved visitor preference
-- Pricing, Founder and Guarantee pages kept
-- Mobile dropdown navigation
-- GitHub Pages ready
+This build uses the approved bright futuristic glassmorphism direction.
+Dark mode has been removed from the interface and JavaScript.
 
-New service pages:
-- web-design.html
-- seo.html
-- social-media.html
-- paid-ads.html
-- ai-search.html
+Homepage updates:
+- Approved light/pink/blue hero artwork
+- Floating glass navigation
+- Home / Services / Industries / Our Work / About / Contact
+- Get a Free Growth Audit CTA
+- SEO + Local SEO, Website Design, Social Media, Paid Advertising, AI Search links
+- Industry section for Spa & Salon, Gym & Fitness, Restaurants and Real Estate
+- Updated SEO title and meta description
+- Optimized WebP hero asset
 
-Deploy:
-Upload every file from this folder to the root of the GitHub Pages repository.
+Deployment:
+Upload the contents of this folder to GitHub Pages or Netlify.
+index.html must remain in the site root.

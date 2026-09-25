@@ -3,25 +3,8 @@
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  // Theme: remember visitor choice
-  const savedTheme = localStorage.getItem('qixton-theme');
-  const preferredDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const initialTheme = savedTheme || (preferredDark ? 'dark' : 'light');
-  root.dataset.theme = initialTheme;
-
-  const themeMeta = document.querySelector('meta[name="theme-color"]');
-  const updateThemeMeta = () => {
-    if (themeMeta) themeMeta.setAttribute('content', root.dataset.theme === 'dark' ? '#090811' : '#f8f7ff');
-  };
-  updateThemeMeta();
-
-  document.querySelectorAll('#themeToggle, .theme-toggle').forEach(btn => {
-    btn.addEventListener('click', () => {
-      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('qixton-theme', root.dataset.theme);
-      updateThemeMeta();
-    });
-  });
+  // Light theme only
+  root.removeAttribute('data-theme');
 
   // Cursor glow
   const glow = document.querySelector('.cursor-glow');
