@@ -156,3 +156,27 @@
     innerMenuBtn.addEventListener('click', () => innerNavLinks.classList.toggle('open'));
   }
 })();
+
+// Prefill the package enquiry page from Add Package buttons.
+(() => {
+  const serviceSelect = document.getElementById('serviceSelect');
+  const packageInput = document.getElementById('packageInput');
+  const selectedPrice = document.getElementById('selectedPrice');
+  if (!serviceSelect || !packageInput) return;
+  const params = new URLSearchParams(window.location.search);
+  const service = params.get('service') || '';
+  const pkg = params.get('package') || '';
+  const price = params.get('price') || '';
+  if (service) serviceSelect.value = service;
+  if (pkg) packageInput.value = pkg;
+  if (selectedPrice) selectedPrice.value = price;
+  const summaryService = document.getElementById('summaryService');
+  const summaryPackage = document.getElementById('summaryPackage');
+  const refreshSummary = () => {
+    if (summaryService) summaryService.textContent = serviceSelect.value || 'Qixton Service';
+    if (summaryPackage) summaryPackage.textContent = [packageInput.value, selectedPrice?.value].filter(Boolean).join(' · ') || 'Choose a package in the form';
+  };
+  serviceSelect.addEventListener('change', refreshSummary);
+  packageInput.addEventListener('input', refreshSummary);
+  refreshSummary();
+})();
