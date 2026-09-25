@@ -1,194 +1,307 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Qixton — AI discoverability, websites, SEO, social media and growth systems." />
-  <title>Qixton — AI Discoverability System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Qixton — websites, SEO, social media, paid ads and AI discoverability in one connected growth system.">
+  <title>Qixton — The Intelligent Growth System</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#07070a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="theme-color" content="#06040b">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="site-noise"></div>
+  <div class="page-noise"></div>
   <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="bg-grid"></div>
-  <div class="bg-planet planet-a"></div>
-  <div class="bg-planet planet-b"></div>
-  <div class="bg-planet planet-c"></div>
 
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand" aria-label="Qixton home">
-        <img src="favicon.png" alt="Qixton logo">
+  <header class="topbar">
+    <div class="shell nav">
+      <a class="brand" href="#top">
+        <img src="favicon.png" alt="">
         <span>QIXTON</span>
       </a>
-      <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
-      <nav class="nav-links" id="navMenu">
-        <a href="#home" class="active">Home</a>
+      <nav class="navlinks" id="navlinks">
+        <a href="#system">System</a>
         <a href="#services">Services</a>
-        <a href="pricing.html">Pricing</a>
+        <a href="#pricing">Pricing</a>
+        <a href="founder.html">Founder</a>
         <a href="guarantee.html">Guarantee</a>
-        <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="nav-cta">Get Started <span>→</span></a>
+      <div class="nav-actions">
+        <a class="text-nav" href="#contact">Contact</a>
+        <a class="nav-pill" href="#contact">Start a project</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      </div>
     </div>
   </header>
 
-  <main id="home">
-    <section class="hero container">
-      <div class="hero-layout">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">THE AI DISCOVERY SYSTEM</div>
-          <h1>Make Your Business <span>AI-Discoverable</span></h1>
-          <p>Get found, recommended, and trusted across AI search, chat, and emerging platforms.</p>
-
-          <div class="hero-actions">
-            <a href="#contact" class="primary-btn">Get Started Today <span>→</span></a>
-            <a href="guarantee.html" class="secondary-btn"><i>🛡</i> Money-Back Guarantee</a>
-          </div>
-
-          <div class="hero-stats">
-            <div><strong>10K+</strong><span>Businesses<br>Optimized</span></div>
-            <div><strong>300%</strong><span>Avg. Visibility<br>Increase</span></div>
-            <div><strong>95%</strong><span>Client<br>Satisfaction</span></div>
-            <div><strong>60-Day</strong><span>Money-Back<br>Guarantee</span></div>
-          </div>
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="kicker">THE INTELLIGENT</div>
+        <h1>Growth<br><span>System.</span></h1>
+        <p>Websites, search, social, paid media and AI discoverability — connected into one digital system built to help businesses grow.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="primary-cta">Start a Project</a>
+          <a href="#system" class="plain-cta">Explore the system <span>↓</span></a>
         </div>
+      </div>
 
-        <div class="hero-center reveal" id="heroCenter">
-          <div class="tag-card tag-top-left">WEB<br>SEARCH</div>
-          <div class="tag-card tag-top-right">SOCIAL<br>AI</div>
-          <div class="tag-card tag-bottom-left">AI<br>CHAT</div>
-          <div class="tag-card tag-bottom-right">KNOWLEDGE<br>GRAPHS</div>
-
-          <div class="hero-ring ring-1"></div>
-          <div class="hero-ring ring-2"></div>
-          <div class="hero-ring ring-3"></div>
-          <div class="hero-spark s1"></div>
-          <div class="hero-spark s2"></div>
-          <div class="hero-spark s3"></div>
-          <div class="hero-spark s4"></div>
-
-          <div class="orb-wrap" id="orbWrap">
-            <div class="halo halo-1"></div>
-            <div class="halo halo-2"></div>
-            <img src="qixton-glass-orb.jpg" alt="Qixton glowing orb" class="hero-orb">
-          </div>
-
-          <div class="base-glow"></div>
-          <div class="scroll-chip">SCROLL TO EXPLORE</div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb-shadow"></div>
+        <div class="orb-shell">
+          <div class="orb-ring ring-a"></div>
+          <div class="orb-ring ring-b"></div>
+          <div class="orb-ring ring-c"></div>
+          <img src="qixton-glass-orb.jpg" alt="" class="hero-orb">
         </div>
+        <div class="float-tile ft-a"><small>01</small><b>WEB</b></div>
+        <div class="float-tile ft-b"><small>02</small><b>SEARCH</b></div>
+        <div class="float-tile ft-c"><small>03</small><b>SOCIAL</b></div>
+        <div class="float-tile ft-d"><small>04</small><b>AI</b></div>
+      </div>
 
-        <aside class="hero-side reveal">
-          <div class="search-card glass">
-            <div class="search-left">✦</div>
-            <div class="search-text">Which company should I choose?</div>
-            <div class="search-label">AI SEARCH</div>
-          </div>
+      <div class="hero-foot">
+        <span>Scroll to explore</span>
+        <i></i>
+      </div>
+    </section>
 
-          <div class="result-card glass">
-            <div class="result-head">
-              <div class="result-icon">Q</div>
-              <div>
-                <small>RECOMMENDED</small>
-                <h3>Your Business</h3>
+    <section class="scroll-story" id="system">
+      <div class="story-shell shell">
+        <div class="story-visual-wrap">
+          <div class="story-visual">
+            <div class="visual-top">
+              <span>QIXTON / LIVE SYSTEM</span>
+              <b id="sceneIndex">01 / 05</b>
+            </div>
+
+            <div class="scene scene-web active" data-scene="web">
+              <div class="browser-card back">
+                <div class="browser-chrome"><i></i><i></i><i></i></div>
+                <div class="fake-lines"><span></span><span></span><span></span></div>
               </div>
+              <div class="browser-card front">
+                <div class="browser-chrome"><i></i><i></i><i></i></div>
+                <div class="site-preview">
+                  <div class="mini-copy">
+                    <small>YOUR BRAND</small>
+                    <h3>Built to move people.</h3>
+                    <p>Strategy → Design → Action</p>
+                    <span></span>
+                  </div>
+                  <div class="mini-orb"></div>
+                </div>
+              </div>
+              <div class="mini-phone"><i></i><span></span><span></span><span></span></div>
+              <div class="visual-badge vb1">Custom UI</div>
+              <div class="visual-badge vb2">Conversion-first</div>
             </div>
-            <p>Strong expertise, local relevance and clear service signals make this brand easy for AI systems to understand.</p>
-            <div class="pill-row">
-              <span>Schema</span>
-              <span>Authority</span>
-              <span>Entities</span>
-            </div>
-          </div>
 
-          <div class="platform-card glass">
-            <small>FOUND ACROSS</small>
-            <div class="platform-list">
-              <span>ChatGPT</span>
-              <span>Google AI</span>
-              <span>Perplexity</span>
-              <span>Claude</span>
-              <span>Bing</span>
-              <span>And More</span>
+            <div class="scene scene-search" data-scene="search">
+              <div class="search-ui">
+                <div class="searchbar"><span>⌕</span><b>best digital agency near me</b><i>↵</i></div>
+                <div class="result-row featured">
+                  <em>01</em>
+                  <div><small>Recommended</small><h4>Your Business</h4><p>Relevant. Trusted. Easy to choose.</p></div>
+                </div>
+                <div class="result-row"><em>02</em><div class="skeleton"></div></div>
+                <div class="result-row"><em>03</em><div class="skeleton small"></div></div>
+              </div>
+              <div class="signal-orb"><b>Q</b><span>SEARCH SIGNAL</span></div>
+              <div class="keyword k1">local SEO</div>
+              <div class="keyword k2">authority</div>
+              <div class="keyword k3">intent</div>
+            </div>
+
+            <div class="scene scene-social" data-scene="social">
+              <div class="feed-phone">
+                <div class="notch"></div>
+                <div class="post-head"></div>
+                <div class="post-art"><span>CREATE<br>ATTENTION.</span><i></i></div>
+                <div class="post-actions"><i></i><i></i><i></i></div>
+              </div>
+              <div class="social-card sc1"><small>REEL</small><b>+ Reach</b></div>
+              <div class="social-card sc2"><small>AD</small><b>+ Leads</b></div>
+              <div class="social-card sc3"><small>POST</small><b>+ Trust</b></div>
+            </div>
+
+            <div class="scene scene-ai" data-scene="ai">
+              <div class="ai-grid"></div>
+              <div class="ai-query"><i>✦</i><p>Which business should I choose?</p><span>AI SEARCH</span></div>
+              <div class="ai-answer">
+                <div class="ai-head"><b>Q</b><div><small>RECOMMENDED</small><h4>Your Business</h4></div></div>
+                <p>Clear expertise, strong relevance and structured service signals help AI systems understand the brand.</p>
+                <div class="ai-tags"><span>Schema</span><span>Entities</span><span>Authority</span></div>
+              </div>
+              <div class="network-dot n1"></div><div class="network-dot n2"></div><div class="network-dot n3"></div><div class="network-dot n4"></div>
+            </div>
+
+            <div class="scene scene-growth" data-scene="growth">
+              <div class="metric-panel">
+                <div class="metric-head"><span>GROWTH CONTROL</span><b>LIVE</b></div>
+                <div class="metric-big"><small>MOMENTUM</small><strong>↑</strong><svg viewBox="0 0 700 230"><path d="M0 204 C80 210 105 172 170 180 C250 190 265 128 330 138 C410 150 430 82 500 98 C572 112 610 45 700 40"/></svg></div>
+                <div class="metric-row">
+                  <div><small>VISIBILITY</small><b>+184%</b></div>
+                  <div><small>LEADS</small><b>3.2×</b></div>
+                  <div><small>CONVERSION</small><b>+61%</b></div>
+                </div>
+              </div>
+              <p class="illustrative">Illustrative interface metrics — not client performance claims.</p>
             </div>
           </div>
-        </aside>
+        </div>
+
+        <div class="story-copy">
+          <article class="story-step active" data-step="web" data-index="01 / 05">
+            <span>01 / WEBSITE</span>
+            <h2>Your website<br><em>should do more.</em></h2>
+            <p>Not a brochure. Not a template. A digital environment that makes your business feel credible, clear and easy to choose.</p>
+          </article>
+          <article class="story-step" data-step="search" data-index="02 / 05">
+            <span>02 / SEARCH</span>
+            <h2>Be found<br><em>naturally.</em></h2>
+            <p>Technical SEO, local visibility and content structure work together to capture people who already have buying intent.</p>
+          </article>
+          <article class="story-step" data-step="social" data-index="03 / 05">
+            <span>03 / SOCIAL</span>
+            <h2>Turn attention<br><em>into action.</em></h2>
+            <p>Social content, reels and paid creative should move people somewhere — to trust, inquiry, booking or purchase.</p>
+          </article>
+          <article class="story-step" data-step="ai" data-index="04 / 05">
+            <span>04 / AI DISCOVERY</span>
+            <h2>Become a brand<br><em>AI can understand.</em></h2>
+            <p>Structured content, clear entities and authority signals make your business easier for answer engines to interpret.</p>
+          </article>
+          <article class="story-step" data-step="growth" data-index="05 / 05">
+            <span>05 / GROWTH</span>
+            <h2>One system.<br><em>Compounding momentum.</em></h2>
+            <p>Website, search, social, paid campaigns and AI visibility connect into one measurable customer journey.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="feature-strip container">
-      <div class="feature-card">
-        <div class="feature-icon">◎</div>
-        <div><h3>AI Search Optimization</h3><p>Be the answer in AI search.</p></div>
+    <section class="modes shell" id="services">
+      <div class="section-kicker">THE QIXTON STACK</div>
+      <div class="section-title-row">
+        <h2>Your growth,<br>in every mode.</h2>
+        <p>Choose one service or combine them. Each part is designed to connect cleanly with the rest of your marketing system.</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">▮</div>
-        <div><h3>Authority Building</h3><p>Build trust that AI recognizes.</p></div>
+      <div class="mode-tabs">
+        <button class="mode-tab active" data-mode="web">Web</button>
+        <button class="mode-tab" data-mode="seo">SEO</button>
+        <button class="mode-tab" data-mode="social">Social</button>
+        <button class="mode-tab" data-mode="ads">Paid Ads</button>
+        <button class="mode-tab" data-mode="ai">AEO / GEO</button>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon">◌</div>
-        <div><h3>Entity & Schema Strategy</h3><p>Structured for AI understanding.</p></div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon">✦</div>
-        <div><h3>Real Business Growth</h3><p>More visibility. More customers.</p></div>
+      <div class="mode-stage">
+        <div class="mode-copy">
+          <span id="modeEyebrow">WEBSITE DESIGN</span>
+          <h3 id="modeTitle">Premium websites that feel custom.</h3>
+          <p id="modeBody">Mobile-first, conversion-focused and designed around how your customers make decisions.</p>
+          <a href="pricing.html">See pricing ↗</a>
+        </div>
+        <div class="mode-visual" id="modeVisual">
+          <div class="mode-screen screen-main"><i></i><span></span><span></span><b></b></div>
+          <div class="mode-screen screen-side"><i></i><span></span><span></span></div>
+          <div class="mode-float mf1"></div><div class="mode-float mf2"></div>
+        </div>
       </div>
     </section>
 
-    <section class="content-section container" id="services">
-      <div class="section-head reveal">
+    <section class="pricing shell" id="pricing">
+      <div class="section-kicker">PRICING</div>
+      <div class="section-title-row">
+        <h2>Clear pricing.<br>No mystery.</h2>
+        <p>Starter pricing for common Qixton services. Bigger scopes can be tailored after a short discovery call.</p>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card">
+          <small>WEBSITE STARTER</small>
+          <h3>₹14,999</h3>
+          <p>One-time custom website for small businesses.</p>
+          <ul><li>Up to 5 pages</li><li>Responsive design</li><li>Basic SEO structure</li><li>Contact form</li></ul>
+        </article>
+        <article class="price-card featured">
+          <small>GROWTH STACK</small>
+          <h3>₹24,999<span>/month</span></h3>
+          <p>A connected monthly growth system.</p>
+          <ul><li>SEO support</li><li>Social media</li><li>AEO / GEO</li><li>Monthly strategy review</li></ul>
+        </article>
+        <article class="price-card">
+          <small>PREMIUM WEBSITE</small>
+          <h3>₹29,999+</h3>
+          <p>For brands that want a more cinematic experience.</p>
+          <ul><li>Advanced motion</li><li>Premium UI</li><li>Conversion architecture</li><li>Custom sections</li></ul>
+        </article>
+      </div>
+      <div class="pricing-link"><a href="pricing.html">View full pricing →</a></div>
+    </section>
+
+    <section class="founder-tease shell">
+      <div class="founder-photo-wrap">
+        <img src="founder-puskar.jpg" alt="Puskar Das, Founder of Qixton">
+      </div>
+      <div class="founder-copy">
+        <div class="section-kicker">FOUNDER</div>
+        <h2>The person<br>behind Qixton.</h2>
+        <p>Qixton was built around a simple idea: digital marketing should be clear, strategic and tied to real business growth — not just activity for the sake of activity.</p>
+        <div class="founder-sign">
+          <strong>Puskar Das</strong>
+          <span>Founder & Digital Marketing Strategist</span>
+        </div>
+        <a class="plain-cta dark" href="founder.html">Meet the founder <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="feature-grid-section shell">
+      <div class="section-kicker">AND THEN SOME</div>
+      <h2>Everything your growth system<br>should already have.</h2>
+      <div class="feature-grid">
+        <article><b>Custom ownership</b><p>Your website and business assets stay yours after final payment.</p></article>
+        <article><b>Mobile-first</b><p>Layouts are designed to work properly on phones, tablets and desktop.</p></article>
+        <article><b>Analytics-ready</b><p>Built to connect with tracking, conversion and reporting tools.</p></article>
+        <article><b>Search-ready</b><p>Strong technical foundations for SEO and AI discoverability.</p></article>
+        <article><b>Platform flexible</b><p>We work across Google Ads, Meta Ads, Amazon Ads and Shopsy.</p></article>
+        <article><b>Long-term support</b><p>Maintenance and ongoing support can be added to your service plan.</p></article>
+      </div>
+    </section>
+
+    <section class="guarantee shell">
+      <div class="guarantee-card">
         <div>
-          <div class="eyebrow">SERVICES</div>
-          <h2>The Qixton Growth Stack</h2>
+          <div class="section-kicker">SERVICE SATISFACTION GUARANTEE</div>
+          <h2>Long-term relationships<br>start with trust.</h2>
+          <p>If the agreed scope is not delivered and you remain unsatisfied after a correction round, eligible Qixton service fees may be refundable under the guarantee terms.</p>
         </div>
-        <p>Websites, SEO, social media, paid ads and AI discoverability — designed to work together as one system.</p>
-      </div>
-      <div class="service-grid">
-        <article class="service-card reveal"><span>01</span><h3>Website Design</h3><p>Custom high-converting websites with premium UI and strong mobile experience.</p></article>
-        <article class="service-card reveal"><span>02</span><h3>SEO</h3><p>Technical, local and content-focused SEO to capture customer demand.</p></article>
-        <article class="service-card reveal"><span>03</span><h3>Social Media</h3><p>Content systems, reels and brand communication that builds attention.</p></article>
-        <article class="service-card reveal"><span>04</span><h3>Paid Ads</h3><p>Google and Meta campaign management focused on measurable conversions.</p></article>
-        <article class="service-card reveal"><span>05</span><h3>AEO / GEO</h3><p>Structure your brand so AI-assisted search can understand and recommend it.</p></article>
-        <article class="service-card reveal"><span>06</span><h3>E-commerce Growth</h3><p>Marketplace and store growth support for product-based businesses.</p></article>
+        <a href="guarantee.html" class="primary-cta light">Read guarantee terms</a>
       </div>
     </section>
 
-    <section class="money-banner container reveal">
-      <div>
-        <div class="eyebrow">GUARANTEE</div>
-        <h2>60-Day Money-Back Guarantee</h2>
-        <p>If you are not satisfied after the agreed correction round, eligible Qixton service fees may be refunded according to our policy.</p>
-      </div>
-      <a href="guarantee.html" class="secondary-btn big">Read Full Guarantee</a>
-    </section>
-
-    <section class="contact-section container" id="contact">
-      <div class="contact-panel reveal">
-        <div class="eyebrow">CONTACT</div>
-        <h2>Ready to grow your business?</h2>
-        <p>Tell us about your business, and we’ll help you build the right growth system.</p>
-        <div class="contact-actions">
-          <a href="mailto:hello@qixton.com?subject=Qixton%20Project%20Enquiry" class="primary-btn">Start Your Project</a>
-          <a href="pricing.html" class="secondary-btn">See Pricing</a>
-        </div>
+    <section class="final-cta shell" id="contact">
+      <div class="section-kicker">YOUR NEXT CHAPTER</div>
+      <h2>Ready to build<br>something that grows?</h2>
+      <p>Tell us where your business is now. We’ll help you identify what should come next.</p>
+      <div class="hero-actions center">
+        <a href="mailto:hello@qixton.com?subject=Qixton%20Project%20Enquiry" class="primary-cta">Start a Project</a>
+        <a href="pricing.html" class="plain-cta dark">See Pricing <span>→</span></a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer container">
-    <div class="brand footer-brand"><img src="favicon.png" alt=""><span>QIXTON</span></div>
+  <footer class="footer shell">
+    <a class="brand" href="#top"><img src="favicon.png" alt=""><span>QIXTON</span></a>
     <div class="footer-links">
+      <a href="#services">Services</a>
       <a href="pricing.html">Pricing</a>
+      <a href="founder.html">Founder</a>
       <a href="guarantee.html">Guarantee</a>
-      <a href="#contact">Contact</a>
     </div>
-    <p>© <span id="year"></span> Qixton</p>
+    <span>© <span id="year"></span> Qixton</span>
   </footer>
 
   <script src="script.js"></script>

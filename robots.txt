@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://puskarqtonix-pixel.github.io/Qixxton/sitemap.xml
+
+Sitemap: https://qixton.com/sitemap.xml
