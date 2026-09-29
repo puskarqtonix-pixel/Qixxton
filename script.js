@@ -6,16 +6,6 @@
   // Light theme only
   root.removeAttribute('data-theme');
 
-  // Cursor glow
-  const glow = document.querySelector('.cursor-glow');
-  window.addEventListener('pointermove', e => {
-    if (!glow) return;
-    glow.animate(
-      {left:`${e.clientX}px`, top:`${e.clientY}px`},
-      {duration:650,fill:'forwards',easing:'cubic-bezier(.2,.8,.2,1)'}
-    );
-  }, {passive:true});
-
   // Real navigation
   const siteNav = document.getElementById('siteNav');
   window.addEventListener('scroll', () => {
@@ -25,35 +15,27 @@
   const mobileBtn = document.getElementById('navMobileBtn');
   const mobileMenu = document.getElementById('navMenuV2');
   if (mobileBtn && mobileMenu) {
-    mobileBtn.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    mobileBtn.addEventListener('click', () => { const open=mobileMenu.classList.toggle('open'); mobileBtn.setAttribute('aria-expanded', String(open)); mobileBtn.setAttribute('aria-label', open ? 'Close menu':'Open menu'); });
   }
 
   document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
     toggle.addEventListener('click', e => {
-      if (window.innerWidth <= 1000) {
+      if (true) {
         e.preventDefault();
         const parent = toggle.closest('.nav-dropdown');
         document.querySelectorAll('.nav-dropdown.open').forEach(d => {
-          if (d !== parent) d.classList.remove('open');
+          if (d !== parent) { d.classList.remove('open'); d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded','false'); }
         });
-        parent?.classList.toggle('open');
+        const open=parent?.classList.toggle('open'); toggle.setAttribute('aria-expanded',String(open));
       }
     });
   });
 
   document.addEventListener('click', e => {
-    if (!e.target.closest('.nav-dropdown') && window.innerWidth <= 1000) {
-      document.querySelectorAll('.nav-dropdown.open').forEach(d => d.classList.remove('open'));
+    if (!e.target.closest('.nav-dropdown')) {
+      document.querySelectorAll('.nav-dropdown.open').forEach(d => { d.classList.remove('open'); d.querySelector('.dropdown-toggle')?.setAttribute('aria-expanded','false'); });
     }
   });
-
-  // Gentle hero movement
-  const hero = document.getElementById('heroReference');
-  window.addEventListener('scroll', () => {
-    if (!hero) return;
-    const y = Math.min(window.scrollY, window.innerHeight);
-    hero.style.transform = `scale(${1.001 + y/190000}) translateY(${y/240}px)`;
-  }, {passive:true});
 
   // Interactive scroll showcase
   const steps = [...document.querySelectorAll('.story-step')];
@@ -116,21 +98,47 @@
     if (stageEyebrow) stageEyebrow.textContent = data.eyebrow;
     if (stageTitle) stageTitle.textContent = data.title;
     if (stageBody) stageBody.textContent = data.body;
+    document.querySelector('.qx-stage')?.setAttribute('data-service', name);
+    document.querySelectorAll('.qx-stage-tab').forEach(t => t.setAttribute('aria-pressed', String(t.dataset.scene === name)));
+    const progress = document.querySelector('.qx-stage');
+    if (progress) progress.style.setProperty('--scene-progress', ((['web','seo','social','ads','ai'].indexOf(name)+1)*20)+'%');
+    const fallback = document.querySelector('.qx-service-fallback');
+    const activeTab = document.querySelector('.qx-stage-tab[data-scene="'+name+'"] svg');
+    if (fallback && activeTab) fallback.replaceChildren(activeTab.cloneNode(true));
+    window.dispatchEvent(new CustomEvent('qixton:service', {detail:name}));
     if (stageLink) {
       stageLink.href = data.link;
       stageLink.textContent = data.linkText;
     }
   }
 
-  if (steps.length) {
-    const io = new IntersectionObserver(entries => {
-      const active = entries
-        .filter(e => e.isIntersecting)
-        .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
-      if (active) setService(active.target.dataset.step);
-    }, {rootMargin:'-32% 0px -32% 0px', threshold:[.2,.4,.6]});
-    steps.forEach(s => io.observe(s));
-  }
+  let lastService = 'web';
+  let scrollFrame = 0;
+  const updateService = () => {
+    scrollFrame = 0;
+    if (!steps.length) return;
+    const aim = window.innerHeight * .5;
+    const closest = steps.reduce((best, step) => {
+      const box = step.getBoundingClientRect();
+      const distance = Math.abs(box.top + box.height / 2 - aim);
+      return distance < best.distance ? {step, distance} : best;
+    }, {step:steps[0],distance:Infinity}).step.dataset.step;
+    if (closest !== lastService) { lastService=closest; setService(closest); }
+  };
+  window.addEventListener('scroll', () => {
+    if (!scrollFrame) scrollFrame=requestAnimationFrame(updateService);
+  }, {passive:true});
+  document.querySelectorAll('.qx-stage-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const name=tab.dataset.scene;
+      lastService=name; setService(name);
+      if (window.innerWidth>1000) {
+        const step=steps.find(s=>s.dataset.step===name);
+        if (step) step.scrollIntoView({behavior:root.dataset.motion==='off'?'instant':'smooth',block:'center'});
+      }
+    });
+  });
+  updateService();
 
   // Reuse theme + nav behavior on inner/service pages
   const innerMenuBtn = document.getElementById('innerMenuBtn');

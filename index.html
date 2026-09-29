@@ -2,6 +2,15 @@
 
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8XPJ436L1E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-8XPJ436L1E');
+</script>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="Qixton helps growing businesses generate enquiries through SEO, custom websites, social media, paid advertising and AI search optimization." name="description"/>
@@ -13,13 +22,87 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="style.css" rel="stylesheet"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What services does Qixton provide?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Qixton provides custom website design and development, SEO and local SEO, social media marketing, Google and Meta advertising, online reputation support, and AI search optimization including AEO and GEO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you build custom websites or use templates?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our website projects are built around the business, brand and conversion goals. We focus on responsive design, clear user journeys, performance and an SEO-ready structure rather than simply dropping content into a generic layout."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Qixton help a local or small business?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We work with local businesses, startups and growing brands. The strategy can focus on local search visibility, enquiries, bookings, calls, social growth or paid lead generation depending on the business goal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does SEO take to show results?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "SEO is a long-term growth channel rather than an instant result. Timing depends on your website, competition, location, search demand and current authority. We focus on measurable improvements in visibility, relevant traffic and enquiries instead of guaranteeing a specific ranking date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you manage Google Ads and Meta Ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Qixton can plan and manage paid campaigns across Google, Facebook and Instagram, including targeting, campaign structure, creative direction, landing-page alignment and performance tracking."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are AEO and GEO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "AEO and GEO help make your business content easier for search engines and AI-assisted discovery systems to understand. This can include structured content, schema, entity clarity, useful FAQs and stronger authority signals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I choose only one service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. You can start with a single service such as website design, SEO, social media or paid ads, or combine services when an integrated strategy makes more sense for your goals."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with Qixton?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start by sending us your business details and what you want to improve. We can review your current online presence, discuss the goal and recommend an appropriate service or package before the project begins."
+      }
+    }
+  ]
+}
+</script>
+<link href="experience.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="qixton-home">
 <div aria-hidden="true" class="cursor-glow"></div>
 <header class="site-nav" id="siteNav">
 <div class="shell nav-row-v2">
 <a class="nav-brand-v2" href="#top"><img alt="Qixton" src="qx-mark.svg"/><span>QIXTON</span></a>
-<button aria-label="Open menu" class="nav-mobile-btn" id="navMobileBtn">☰</button>
+<button aria-label="Open menu" aria-expanded="false" aria-controls="navMenuV2" class="nav-mobile-btn" id="navMobileBtn">☰</button>
 <nav aria-label="Primary navigation" class="nav-menu-v2" id="navMenuV2">
 <a class="active" href="#top">Home</a>
 <div class="nav-dropdown">
@@ -51,67 +134,44 @@
 </div>
 </div>
 </header>
-<main id="top">
-<section aria-label="Qixton homepage hero" class="hero-exact">
-<img alt="Qixton digital marketing agency hero with SEO, website design, social media, paid advertising and AI search services" class="hero-reference" id="heroReference" src="hero-reference.webp"/>
-<div class="hero-shine shine-a"></div>
-<div class="hero-shine shine-b"></div>
-<div class="hero-particle hp1"></div><div class="hero-particle hp2"></div><div class="hero-particle hp3"></div>
-<div class="hero-globe-motion" aria-hidden="true">
-  <span class="globe-halo"></span>
-  <span class="globe-orbit globe-orbit-a"></span>
-  <span class="globe-orbit globe-orbit-b"></span>
-  <span class="globe-sheen"></span>
-</div>
-<!-- Clickable hero service cards -->
-<a aria-label="Get a free growth audit" class="hotspot hs-getstarted" href="#contact"></a>
-<a aria-label="Get a free growth audit" class="hotspot hs-herocta" href="#contact"></a>
-<a aria-label="See our work" class="hotspot hs-work" href="#our-work"></a>
-<a aria-label="SEO and local SEO services" class="hotspot hs-web" href="seo.html"></a>
-<a aria-label="Website design services" class="hotspot hs-seo" href="web-design.html"></a>
-<a aria-label="Social media marketing" class="hotspot hs-social" href="social-media.html"></a>
-<a aria-label="Paid advertising" class="hotspot hs-ads" href="paid-ads.html"></a>
-<a aria-label="AI search optimization" class="hotspot hs-ai" href="ai-search.html"></a>
+<main tabindex="-1" id="top">
+<section class="qx-hero" aria-labelledby="heroTitle">
+  <div class="qx-city" aria-hidden="true"></div><div class="qx-atmosphere" aria-hidden="true"></div>
+  <div class="qx-hero-grid">
+    <div class="qx-hero-copy">
+      <p class="qx-eyebrow">DIGITAL MARKETING AGENCY</p>
+      <h1 id="heroTitle">Turn Your Online<br class="qx-wide-break"> Presence Into <span>Customers.</span></h1>
+      <p class="qx-intro">Qixton helps growing businesses get discovered and generate enquiries through SEO, custom websites, social media, paid advertising and AI search optimization.</p>
+      <div class="qx-actions"><a class="gradient-btn" href="#contact">Get a Free Growth Audit <span aria-hidden="true">↗</span></a><a class="qx-secondary" href="#our-work"><span class="qx-play" aria-hidden="true">▷</span> See Our Work</a></div>
+      <div class="qx-trust"><a href="guarantee.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 3 7v5c0 5 9 10 9 10s9-5 9-10V7zM8 12l3 3 5-6"/></svg><span>Service satisfaction<br>guarantee</span></a><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M3 8h18"/></svg><span>Custom-built<br>websites</span></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M8 11l2-3 2 1"/></svg><span>SEO & local<br>visibility</span></span></div>
+    </div>
+    <div class="qx-hero-scene" role="img" aria-label="Interactive glass globe with a glowing Q and a miniature city">
+      <div class="qx-floor-glow" aria-hidden="true"></div><canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="qx-orb-fallback" aria-hidden="true"><span>Q</span><i></i><i></i></div>
+      <span class="qx-scene-hint" aria-hidden="true"><i></i> A world of possibilities.</span>
+    </div>
+    <div class="qx-hero-services" aria-label="Explore Qixton services"><a class="qx-service qx-depth" href="seo.html" data-accent="seo"><span class="qx-service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M8 11l2-3 2 1"/></svg></span><span><strong>SEO & Local SEO</strong><small>Rank higher. Get found by local customers.</small></span><span class="qx-arrow" aria-hidden="true">↗</span></a><a class="qx-service qx-depth" href="web-design.html" data-accent="web"><span class="qx-service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M3 8h18"/></svg></span><span><strong>Website Design</strong><small>Fast, modern and conversion focused.</small></span><span class="qx-arrow" aria-hidden="true">↗</span></a><a class="qx-service qx-depth" href="social-media.html" data-accent="social"><span class="qx-service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 10 6-4M9 14l6 4"/></svg></span><span><strong>Social Media</strong><small>Build trust, reach customers and stay visible.</small></span><span class="qx-arrow" aria-hidden="true">↗</span></a><a class="qx-service qx-depth" href="paid-ads.html" data-accent="ads"><span class="qx-service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10 15-6v16L4 14zM7 15l2 6h4l-2-5M3 10v4M22 8v8"/></svg></span><span><strong>Paid Advertising</strong><small>Reach high-intent customers and generate enquiries.</small></span><span class="qx-arrow" aria-hidden="true">↗</span></a><a class="qx-service qx-depth" href="ai-search.html" data-accent="ai"><span class="qx-service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4M10 14v-4h4v4M10 12h4"/></svg></span><span><strong>AI Search Optimization</strong><small>Be visible in the age of AI.</small></span><span class="qx-arrow" aria-hidden="true">↗</span></a></div>
+  </div>
+  <div class="qx-hero-bottom"><div class="qx-search-strip"><span>BUILT FOR<br><b>MODERN SEARCH</b></span><strong>ChatGPT</strong><strong>Google AI</strong><strong>Perplexity</strong><strong>Claude</strong><strong>Bing</strong></div>
+    <div class="qx-hero-tools"><button class="qx-motion" type="button" id="motionToggle" aria-pressed="false">Pause motion</button><a class="qx-scroll" href="#services">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a><span class="qx-tools-spacer" aria-hidden="true"></span></div>
+  </div>
 </section>
 <section class="story-light story-v2" id="services">
 <div class="shell section-heading services-title">
 <h2>One system.<br/>Five growth engines.</h2>
 <p>Scroll through the Qixton stack. Each service has its own strategy, deliverables and pricing page.</p>
 </div>
-<div class="shell story-grid-v2">
+<div class="shell story-grid-v2" id="our-work">
 <div class="sticky-showcase-v2">
-<div class="design3-stage">
-<div class="stage-ambient sa1"></div><div class="stage-ambient sa2"></div>
-<div class="stage-topline"><span>QIXTON INTERACTIVE SHOWCASE</span><b id="stageIndex">01 / 05</b></div>
-<div class="showcase-orb-wrap">
-<div class="showcase-ring r1"></div>
-<div class="showcase-ring r2"></div>
-<div class="showcase-orb">
-<img alt="" src="hero-reference.webp"/>
-</div>
-<div class="pedestal"></div>
-</div>
-<a class="stage-service-card active" data-service-card="web" href="web-design.html">
-<span class="svc-icon">▣</span><div><b>Web Design</b><small>High-converting custom websites</small></div><em>₹9,999+</em>
-</a>
-<a class="stage-service-card" data-service-card="seo" href="seo.html">
-<span class="svc-icon">⌕</span><div><b>SEO</b><small>Organic and local visibility</small></div><em>₹5,999/mo</em>
-</a>
-<a class="stage-service-card" data-service-card="social" href="social-media.html">
-<span class="svc-icon">⌘</span><div><b>Social Media</b><small>Content, reels and engagement</small></div><em>₹6,999/mo</em>
-</a>
-<a class="stage-service-card" data-service-card="ads" href="paid-ads.html">
-<span class="svc-icon">↗</span><div><b>Paid Ads</b><small>Google and Meta campaigns</small></div><em>₹7,999/mo</em>
-</a>
-<a class="stage-service-card" data-service-card="ai" href="ai-search.html">
-<span class="svc-icon">✦</span><div><b>AI Search</b><small>AEO, GEO and schema</small></div><em>₹7,999/mo</em>
-</a>
-<div class="stage-active-copy">
-<small id="stageEyebrow">WEB DESIGN</small>
-<strong id="stageTitle">A premium digital first impression.</strong>
-<p id="stageBody">Custom-built websites designed around trust, clarity, speed and conversion.</p>
-<a href="web-design.html" id="stageLink">Open Web Design Pricing →</a>
-</div>
+<div class="qx-stage" data-service="web">
+ <div class="qx-stage-top"><span>QIXTON INTERACTIVE SHOWCASE</span><b id="stageIndex">01 / 05</b></div>
+ <div class="qx-stage-tabs" aria-label="Choose a service to preview"><button type="button" class="qx-stage-tab" data-scene="web" aria-pressed="true" aria-label="Preview Web Design"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M3 8h18"/></svg><span>Web Design</span></button><button type="button" class="qx-stage-tab" data-scene="seo" aria-pressed="false" aria-label="Preview SEO"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5M8 11l2-3 2 1"/></svg><span>SEO</span></button><button type="button" class="qx-stage-tab" data-scene="social" aria-pressed="false" aria-label="Preview Social"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 10 6-4M9 14l6 4"/></svg><span>Social</span></button><button type="button" class="qx-stage-tab" data-scene="ads" aria-pressed="false" aria-label="Preview Paid Ads"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 10 15-6v16L4 14zM7 15l2 6h4l-2-5M3 10v4M22 8v8"/></svg><span>Paid Ads</span></button><button type="button" class="qx-stage-tab" data-scene="ai" aria-pressed="false" aria-label="Preview AI Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="3"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4M10 14v-4h4v4M10 12h4"/></svg><span>AI Search</span></button></div>
+ <div class="qx-stage-visual" role="img" aria-label="3D service preview">
+   <canvas id="serviceCanvas" aria-hidden="true"></canvas><div class="qx-service-fallback" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M3 8h18"/></svg></div>
+   <div class="qx-stage-floor" aria-hidden="true"></div>
+ </div>
+ <div class="qx-stage-summary"><small id="stageEyebrow">WEB DESIGN</small><strong id="stageTitle">A premium digital first impression.</strong><p id="stageBody">Custom-built websites designed around trust, clarity, speed and conversion.</p><a id="stageLink" href="web-design.html">Open Web Design Pricing →</a></div>
+ <div class="qx-stage-progress" aria-hidden="true"><span></span></div>
 </div>
 </div>
 <div class="story-copy story-copy-v2">
@@ -123,58 +183,15 @@
 </div>
 </div>
 </section>
-<section class="results-showcase shell" id="our-work">
-  <div class="results-kicker">OUR WORK</div>
-  <div class="results-heading">
-    <h2>Real Businesses. Real <span>Results.</span></h2>
-    <p>Take a look at some of the businesses we’ve helped grow online.</p>
-  </div>
-  <div class="results-grid">
-    <article class="result-card">
-      <img src="case-spa.jpg" alt="Local spa project preview">
-      <div class="result-card-copy">
-        <h3>Local Spa</h3>
-        <small>Website + Local SEO</small>
-        <a href="#contact">View Project →</a>
-      </div>
-      <span class="result-arrow" aria-hidden="true">→</span>
-    </article>
-    <article class="result-card">
-      <img src="case-fitness.jpg" alt="Fitness studio project preview">
-      <div class="result-card-copy">
-        <h3>Fitness Studio</h3>
-        <small>Landing Page + Paid Ads</small>
-        <a href="#contact">View Project →</a>
-      </div>
-      <span class="result-arrow" aria-hidden="true">→</span>
-    </article>
-    <article class="result-card">
-      <img src="case-restaurant.jpg" alt="Restaurant project preview">
-      <div class="result-card-copy">
-        <h3>Restaurant</h3>
-        <small>Social + Local Search</small>
-        <a href="#contact">View Project →</a>
-      </div>
-      <span class="result-arrow" aria-hidden="true">→</span>
-    </article>
-  </div>
-</section>
-<section class="industries-showcase shell" id="industries">
-  <div class="results-kicker">INDUSTRIES</div>
-  <div class="results-heading industries-heading">
-    <h2>Industries We <span>Work With</span></h2>
-    <p>We help businesses from different industries build a stronger online presence.</p>
-  </div>
-  <div class="industry-icon-grid">
-    <article><span class="industry-icon">🍽</span><h3>Restaurants &amp; Cafés</h3></article>
-    <article><span class="industry-icon">🏋️</span><h3>Gyms &amp; Fitness Studios</h3></article>
-    <article><span class="industry-icon">🏠</span><h3>Real Estate</h3></article>
-    <article><span class="industry-icon">🪷</span><h3>Spas &amp; Salons</h3></article>
-    <article><span class="industry-icon">💙</span><h3>Healthcare</h3></article>
-    <article><span class="industry-icon">⚖️</span><h3>Law Firms</h3></article>
-    <article><span class="industry-icon">🛒</span><h3>E-commerce</h3></article>
-    <article><span class="industry-icon">⋯</span><h3>More Industries</h3></article>
-  </div>
+<section class="industries-light shell" id="industries">
+<div class="section-kicker">INDUSTRIES</div>
+<div class="section-heading"><h2>Growth systems built around how your customers buy.</h2><p>Qixton combines search, websites, social media and advertising around the customer journey in each industry.</p></div>
+<div class="industry-grid">
+<article><span>01</span><h3>Spa &amp; Salon</h3><p>Local discovery, Instagram visibility, reviews, booking-focused pages and paid campaigns.</p><a href="#contact">Grow bookings →</a></article>
+<article><span>02</span><h3>Gym &amp; Fitness</h3><p>Local SEO, trial offers, social content, membership landing pages and lead campaigns.</p><a href="#contact">Generate enquiries →</a></article>
+<article><span>03</span><h3>Restaurants</h3><p>Google visibility, social content, reviews, menu discovery and customer acquisition.</p><a href="#contact">Increase discovery →</a></article>
+<article><span>04</span><h3>Real Estate</h3><p>Property landing pages, Google Ads, Meta campaigns, remarketing and enquiry funnels.</p><a href="#contact">Build a lead funnel →</a></article>
+</div>
 </section><section class="pricing-light shell" id="pricing">
 <div class="section-kicker">PRICING</div>
 <div class="section-heading"><h2>Clear pricing. Different services. No mystery.</h2><p>Use the overview below, or open a service page to see pricing only for that service.</p></div>
@@ -191,6 +208,48 @@
 </section>
 <section class="guarantee-light shell">
 <div class="guarantee-card"><div><div class="section-kicker">SERVICE SATISFACTION GUARANTEE</div><h2>Long-term relationships start with trust.</h2><p>If the agreed scope is not delivered and you remain unsatisfied after a reasonable correction round, eligible Qixton service fees may be refundable according to the written guarantee terms.</p></div><a class="gradient-btn" href="guarantee.html">Read Guarantee</a></div>
+</section>
+
+<section class="faq-light shell" id="faq">
+  <div class="section-kicker">FAQ</div>
+  <div class="section-heading faq-heading">
+    <h2>Questions before we start?</h2>
+    <p>Quick answers about Qixton, our services and how we work with growing businesses.</p>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item">
+      <summary>What services does Qixton provide?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Qixton provides custom website design and development, SEO and local SEO, social media marketing, Google and Meta advertising, online reputation support, and AI search optimization including AEO and GEO.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Do you build custom websites or use templates?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Our website projects are built around the business, brand and conversion goals. We focus on responsive design, clear user journeys, performance and an SEO-ready structure rather than simply dropping content into a generic layout.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Can Qixton help a local or small business?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Yes. We work with local businesses, startups and growing brands. The strategy can focus on local search visibility, enquiries, bookings, calls, social growth or paid lead generation depending on the business goal.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>How long does SEO take to show results?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>SEO is a long-term growth channel rather than an instant result. Timing depends on your website, competition, location, search demand and current authority. We focus on measurable improvements in visibility, relevant traffic and enquiries instead of guaranteeing a specific ranking date.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Do you manage Google Ads and Meta Ads?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Yes. Qixton can plan and manage paid campaigns across Google, Facebook and Instagram, including targeting, campaign structure, creative direction, landing-page alignment and performance tracking.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>What are AEO and GEO?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>AEO and GEO help make your business content easier for search engines and AI-assisted discovery systems to understand. This can include structured content, schema, entity clarity, useful FAQs and stronger authority signals.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>Can I choose only one service?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Yes. You can start with a single service such as website design, SEO, social media or paid ads, or combine services when an integrated strategy makes more sense for your goals.</p></div>
+    </details>
+    <details class="faq-item">
+      <summary>How do I get started with Qixton?<span aria-hidden="true">+</span></summary>
+      <div class="faq-answer"><p>Start by sending us your business details and what you want to improve. We can review your current online presence, discuss the goal and recommend an appropriate service or package before the project begins.</p></div>
+    </details>
+  </div>
 </section>
 <section class="contact-light shell" id="contact">
 <div class="contact-card"><div class="section-kicker">LET’S BUILD</div><h2>Ready to turn your business into an AI-preferred brand?</h2><p>Tell us what you sell, who you want to reach and what you want to improve.</p><div class="contact-actions"><a class="gradient-btn" href="contact-form.html">Start a Project</a><a class="outline-btn" href="pricing.html">See Pricing</a></div></div>
@@ -240,7 +299,9 @@
   </div>
 </section>
 </main>
-<footer class="footer-light shell"><div class="footer-brand"><img alt="" src="qx-mark.svg"/><b>QIXTON</b></div><div><a href="#services">Services</a><a href="pricing.html">Pricing</a><a href="founder.html">Founder</a><a href="guarantee.html">Guarantee</a></div><span>© <span id="year"></span> Qixton</span></footer>
-<script src="script.js"></script>
+<footer class="footer-light shell"><div class="footer-brand"><img alt="" src="qx-mark.svg"/><b>QIXTON</b></div><div><a href="#services">Services</a><a href="pricing.html">Pricing</a><a href="founder.html">Founder</a><a href="guarantee.html">Guarantee</a><a href="#faq">FAQ</a></div><div class="footer-emails"><a href="mailto:support@qixton.com">support@qixton.com</a><a href="mailto:hr@qixton.com">hr@qixton.com</a><a href="mailto:grievance@qixton.com">grievance@qixton.com</a></div><span>© <span id="year"></span> Qixton</span></footer>
+<script src="script.js" defer></script>
+<script src="vendor/three.min.js" defer></script>
+<script src="qixton-3d.js" defer></script>
 </body>
 </html>
